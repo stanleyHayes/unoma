@@ -1,9 +1,9 @@
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
+import {LightModeOutlined} from "@mui/icons-material";
 import {Link} from "react-router-dom";
-import {UNOMA_DATA} from "../../utils/data";
-import Staff from "./staff";
+import Choice from "./choice";
 
-const BlogSection = () => {
+const ReviewsSection = () => {
     return (
         <Box sx={{width: "100%"}}>
             <Container maxWidth="xl">
@@ -11,12 +11,12 @@ const BlogSection = () => {
                     <Box>
                         <Typography
                             variant="h4"
-                            sx={{color: "text.primary", fontFamily: "SatrevaNova", fontWeight: 700}}>
-                            Our home cleaning {" "}
+                            sx={{color: "secondary.main", fontFamily: "SatrevaNova", fontWeight: 700}}>
+                            Reviews of our clients{" "}
                             <Typography
                                 component="span"
-                                variant="h4" sx={{color: "secondary.main", fontFamily: "SatrevaNova", fontWeight: 700}}>
-                                blog
+                                variant="h4" sx={{color: "text.primary", fontFamily: "SatrevaNova", fontWeight: 700}}>
+                                about our service.
                             </Typography>
                         </Typography>
                     </Box>
@@ -25,9 +25,9 @@ const BlogSection = () => {
                         <Grid container={true}>
                             <Grid item={true} xs={12} md={8}>
                                 <Typography variant="body1" sx={{color: "text.secondary"}}>
-                                    We research and find the best tools, equipments, chemicals and the proper ways to
-                                    clean an office, a house, furniture and many other. We don't forget to share our
-                                    findings with you through our blog.
+                                    We strive for maximum openness. We will be grateful to you for any truthful feedback
+                                    about the work of our company., which you can leave here on the site or using the
+                                    links below.
                                 </Typography>
                             </Grid>
                         </Grid>
@@ -35,33 +35,44 @@ const BlogSection = () => {
 
                     <Box>
                         <Grid container={true} spacing={2}>
-                            {UNOMA_DATA.STAFF.map((staff, index) => {
-                                return (
-                                    <Grid key={index} item={true} xs={12} md={6} lg={3}>
-                                        <Staff staff={staff}/>
-                                    </Grid>
-                                )
-                            })}
+                            <Grid item={true} xs={12} md={6} lg={3}>
+                                <Choice
+                                    icon={
+                                        <LightModeOutlined
+                                            sx={{
+                                                color: "icon.secondary",
+                                                padding: 1,
+                                                fontSize: 40,
+                                                borderRadius: "100%",
+                                                backgroundColor: "icon.secondaryBackground"
+                                            }}
+                                        />
+                                    }
+                                    title="Strict adherence to cleaning standards"
+                                    description="The most top-end equipment, the most expensive environmentally friendly safe chemicals"
+                                />
+                            </Grid>
+
                         </Grid>
                     </Box>
 
                     <Box>
                         <Grid container={true} spacing={2} justifyContent="center">
                             <Grid item={true} xs={12} md={2}>
-                                <Link to="/articles" style={{textDecoration: "none", width: "100%", display: "block"}}>
+                                <Link to="/reviews" style={{textDecoration: "none", width: "100%", display: "block"}}>
                                     <Button
                                         fullWidth={true}
                                         variant="outlined"
                                         size="large"
                                         sx={{
-                                            textTransform: "none",
+                                            textTransform: "capitalize",
                                             color: "colors.accent",
                                             borderRadius: 2,
                                             borderWidth: 2,
                                             borderColor: "colors.accent",
                                             borderStyle: "solid"
                                         }}>
-                                        Go to the Blog
+                                        See More
                                     </Button>
                                 </Link>
                             </Grid>
@@ -73,4 +84,4 @@ const BlogSection = () => {
     )
 }
 
-export default BlogSection;
+export default ReviewsSection;

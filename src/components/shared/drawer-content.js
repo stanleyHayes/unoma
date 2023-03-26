@@ -27,7 +27,7 @@ const DrawerContent = () => {
                         sx={{
                             color: "colors.accent",
                             padding: 1,
-                            fontSize: 20,
+                            fontSize: 32,
                             borderRadius: "100%",
                             cursor: "pointer",
                             borderWidth: 0.5,
@@ -43,12 +43,10 @@ const DrawerContent = () => {
                                     sx={{
                                         color: "colors.accent",
                                         padding: 1,
-                                        fontSize: 20,
+                                        fontSize: 32,
                                         borderRadius: "100%",
                                         cursor: "pointer",
-                                        borderWidth: 0.5,
-                                        borderStyle: "solid",
-                                        borderColor: "colors.accent"
+                                        backgroundColor: "icon.accentBackground"
                                     }}/>
                             </Box>
                         )}
@@ -61,12 +59,10 @@ const DrawerContent = () => {
                                     sx={{
                                         color: "colors.accent",
                                         padding: 1,
-                                        fontSize: 20,
+                                        fontSize: 32,
                                         borderRadius: "100%",
                                         cursor: "pointer",
-                                        borderWidth: 0.5,
-                                        borderStyle: "solid",
-                                        borderColor: "colors.accent"
+                                        backgroundColor: "icon.accentBackground"
                                     }}/>
                             </Box>
                         )}
@@ -108,11 +104,9 @@ const DrawerContent = () => {
                                     sx={{
                                         color: "colors.accent",
                                         padding: 1,
-                                        fontSize: 20,
+                                        fontSize: 32,
                                         borderRadius: "100%",
-                                        borderWidth: 0.5,
-                                        borderStyle: "solid",
-                                        borderColor: "colors.accent"
+                                        backgroundColor: "icon.accentBackground"
                                     }}/>
                             </MUILink>
                             <MUILink href="tel://+380334268644" underline="none">
@@ -136,8 +130,8 @@ const DrawerContent = () => {
                                 sx={{
                                     textTransform: "capitalize",
                                     color: "colors.accent",
-                                    borderRadius: 8,
-                                    borderWidth: 1,
+                                    borderRadius: 2,
+                                    borderWidth: 2,
                                     borderColor: "colors.accent",
                                     borderStyle: "solid"
                                 }}>

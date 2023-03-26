@@ -26,9 +26,6 @@ const MobileHeader = () => {
                             sx={{
                                 color: "colors.accent",
                                 borderWidth: 0.5,
-                                borderStyle: "solid",
-                                borderColor: "colors.accent",
-                                padding: 1,
                                 fontSize: 32,
                                 borderRadius: "100%",
                                 backgroundColor: "icon.accentBackground"
@@ -40,7 +37,7 @@ const MobileHeader = () => {
                                     textTransform: "uppercase",
                                     color: "colors.accent",
                                     fontWeight: 700,
-                                    fontFamily: "RayleighGlamour",
+                                    fontFamily: "SatrevaNova",
                                     letterSpacing: 1.4
                                 }}>
                                 Unona
@@ -55,9 +52,6 @@ const MobileHeader = () => {
                                 sx={{
                                     color: "colors.accent",
                                     borderWidth: 0.5,
-                                    borderStyle: "solid",
-                                    borderColor: "colors.accent",
-                                    padding: 1,
                                     fontSize: 32,
                                     borderRadius: "100%",
                                     backgroundColor: "icon.accentBackground"
@@ -70,9 +64,6 @@ const MobileHeader = () => {
                                         onClick={() => dispatch(UI_ACTION_CREATORS.toggleTheme())}
                                         sx={{
                                             color: "colors.accent",
-                                            borderWidth: 0.5,
-                                            borderStyle: "solid",
-                                            borderColor: "colors.accent",
                                             padding: 1,
                                             fontSize: 32,
                                             borderRadius: "100%",
@@ -88,9 +79,6 @@ const MobileHeader = () => {
                                         onClick={() => dispatch(UI_ACTION_CREATORS.toggleTheme())}
                                         sx={{
                                             color: "colors.accent",
-                                            borderWidth: 0.5,
-                                            borderStyle: "solid",
-                                            borderColor: "colors.accent",
                                             padding: 1,
                                             fontSize: 32,
                                             borderRadius: "100%",

@@ -21,7 +21,9 @@ const Banner = () => {
                                             color: "colors.accent",
                                             backgroundColor: "light.accent",
                                             fontWeight: 800,
-                                            px: 1
+                                            px: 1,
+                                            fontFamily: "SatrevaNova",
+                                            borderRadius: 2
                                         }}>
                                         help
                                     </Typography>
@@ -33,7 +35,9 @@ const Banner = () => {
                                             color: "secondary.main",
                                             backgroundColor: "light.secondary",
                                             fontWeight: 800,
-                                            px: 1
+                                            px: 1,
+                                            fontFamily: "SatrevaNova",
+                                            borderRadius: 2
                                         }}>
                                         clean
                                     </Typography>

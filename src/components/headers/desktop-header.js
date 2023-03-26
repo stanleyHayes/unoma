@@ -27,7 +27,7 @@ const DesktopHeader = () => {
                                 textTransform: "uppercase",
                                 color: "colors.accent",
                                 fontWeight: 700,
-                                fontFamily: "RayleighGlamour",
+                                fontFamily: "SatrevaNova",
                                 letterSpacing: 1.4
                             }}>
                             Unona
@@ -58,9 +58,6 @@ const DesktopHeader = () => {
                                             fontSize: 32,
                                             borderRadius: "100%",
                                             cursor: "pointer",
-                                            borderWidth: 0.5,
-                                            borderStyle: "solid",
-                                            borderColor: "colors.accent",
                                             backgroundColor: "icon.accentBackground"
                                         }}
                                     />
@@ -78,9 +75,6 @@ const DesktopHeader = () => {
                                             fontSize: 32,
                                             borderRadius: "100%",
                                             cursor: "pointer",
-                                            borderWidth: 0.5,
-                                            borderStyle: "solid",
-                                            borderColor: "colors.accent",
                                             backgroundColor: "icon.accentBackground"
                                         }}/>
                                 </Box>
@@ -94,9 +88,6 @@ const DesktopHeader = () => {
                                         padding: 1,
                                         fontSize: 32,
                                         borderRadius: "100%",
-                                        borderWidth: 0.5,
-                                        borderStyle: "solid",
-                                        borderColor: "colors.accent",
                                         backgroundColor: "icon.accentBackground"
                                     }}/>
                             </MUILink>
@@ -120,8 +111,8 @@ const DesktopHeader = () => {
                                 sx={{
                                     textTransform: "capitalize",
                                     color: "colors.accent",
-                                    borderRadius: 8,
-                                    borderWidth: 1,
+                                    borderRadius: 2,
+                                    borderWidth: 2,
                                     borderColor: "colors.accent",
                                     borderStyle: "solid"
                                 }}>
