@@ -9,7 +9,7 @@ import {
     Typography
 } from "@mui/material";
 import {Link} from "react-router-dom";
-import {South} from "@mui/icons-material";
+import {CallOutlined, LocationOnOutlined, MailOutline, ScheduleOutlined, South} from "@mui/icons-material";
 import logo from "./../../assets/images/logo/logo.png";
 
 const MobileFooter = () => {
@@ -147,16 +147,21 @@ const MobileFooter = () => {
                         }}
                     />}>
                         <Typography variant="body1" sx={{color: "white", fontWeight: 700}}>
-                            Our Contacts
+                            Contact Info
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails sx={{backgroundColor: "colors.footer"}}>
                         <Stack spacing={2}>
                             <Box>
-                                <Stack direction="row" spacing={4}>
-                                    <Typography variant="body2" sx={{color: "white"}}>
-                                        Phone:
-                                    </Typography>
+                                <Stack direction="row" spacing={2}>
+                                    <CallOutlined
+                                        sx={{
+                                            color: "colors.accent",
+                                            padding: 1,
+                                            fontSize: 32,
+                                            cursor: "pointer"
+                                        }}
+                                    />
                                     <MUILink href="tel://+380334268644" style={{textDecoration: "none"}}>
                                         <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
                                             +38 033-426 86 44
@@ -166,9 +171,14 @@ const MobileFooter = () => {
                             </Box>
                             <Box>
                                 <Stack direction="row" spacing={4}>
-                                    <Typography variant="body2" sx={{color: "white"}}>
-                                        Address:
-                                    </Typography>
+                                    <LocationOnOutlined
+                                        sx={{
+                                            color: "colors.accent",
+                                            padding: 1,
+                                            fontSize: 32,
+                                            cursor: "pointer"
+                                        }}
+                                    />
                                     <MUILink href="#" style={{textDecoration: "none"}}>
                                         <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
                                             Kyiv,Vidradnyi avenue 55
@@ -178,14 +188,52 @@ const MobileFooter = () => {
                             </Box>
                             <Box>
                                 <Stack direction="row" spacing={4}>
-                                    <Typography variant="body2" sx={{color: "white"}}>
-                                        Email:
-                                    </Typography>
+                                    <MailOutline
+                                        sx={{
+                                            color: "colors.accent",
+                                            padding: 1,
+                                            fontSize: 32,
+                                            cursor: "pointer"
+                                        }}
+                                    />
                                     <MUILink href="mailto://info@unonacleaning.com" style={{textDecoration: "none"}}>
                                         <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
                                             info@unonacleaning.com
                                         </Typography>
                                     </MUILink>
+                                </Stack>
+                            </Box>
+
+                            <Box>
+                                <Stack direction="row" spacing={4}>
+                                    <ScheduleOutlined
+                                        sx={{
+                                            color: "colors.accent",
+                                            padding: 1,
+                                            fontSize: 32,
+                                            cursor: "pointer"
+                                        }}
+                                    />
+                                    <MUILink href="#" style={{textDecoration: "none"}}>
+                                        <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                            Mon-Fri: 09:.00 am - 05:00 pm
+                                        </Typography>
+                                    </MUILink>
+                                </Stack>
+                            </Box>
+                            <Box>
+                                <Stack direction="row" spacing={4}>
+                                    <ScheduleOutlined
+                                        sx={{
+                                            color: "colors.accent",
+                                            padding: 1,
+                                            fontSize: 32,
+                                            cursor: "pointer"
+                                        }}
+                                    />
+                                    <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                        Saturday, Sunday: closed
+                                    </Typography>
                                 </Stack>
                             </Box>
                         </Stack>

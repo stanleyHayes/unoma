@@ -1,6 +1,8 @@
 import {Box, Grid, Stack, Typography, Link as MUILink, CardMedia} from "@mui/material";
 import {Link} from "react-router-dom";
 import logo from "../../assets/images/logo/logo.png";
+import {UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
+import {CallOutlined, LightModeOutlined, LocationOnOutlined, MailOutline, ScheduleOutlined} from "@mui/icons-material";
 
 const DesktopFooter = () => {
     return (
@@ -105,13 +107,18 @@ const DesktopFooter = () => {
                 <Grid item={true} lg={3}>
                     <Stack spacing={2}>
                         <Typography variant="body1" sx={{color: "white", fontWeight: 700}}>
-                            Our Contacts
+                            Contact Info
                         </Typography>
                         <Box>
-                            <Stack direction="row" spacing={4}>
-                                <Typography variant="body2" sx={{color: "white"}}>
-                                    Phone:
-                                </Typography>
+                            <Stack direction="row" spacing={2}>
+                                <CallOutlined
+                                    sx={{
+                                        color: "colors.accent",
+                                        padding: 1,
+                                        fontSize: 32,
+                                        cursor: "pointer"
+                                    }}
+                                />
                                 <MUILink href="tel://+380334268644" style={{textDecoration: "none"}}>
                                     <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
                                         +38 033-426 86 44
@@ -121,9 +128,14 @@ const DesktopFooter = () => {
                         </Box>
                         <Box>
                             <Stack direction="row" spacing={4}>
-                                <Typography variant="body2" sx={{color: "white"}}>
-                                    Address:
-                                </Typography>
+                                <LocationOnOutlined
+                                    sx={{
+                                        color: "colors.accent",
+                                        padding: 1,
+                                        fontSize: 32,
+                                        cursor: "pointer"
+                                    }}
+                                />
                                 <MUILink href="#" style={{textDecoration: "none"}}>
                                     <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
                                         Kyiv,Vidradnyi avenue 55
@@ -133,9 +145,14 @@ const DesktopFooter = () => {
                         </Box>
                         <Box>
                             <Stack direction="row" spacing={4}>
-                                <Typography variant="body2" sx={{color: "white"}}>
-                                    Email:
-                                </Typography>
+                                <MailOutline
+                                    sx={{
+                                        color: "colors.accent",
+                                        padding: 1,
+                                        fontSize: 32,
+                                        cursor: "pointer"
+                                    }}
+                                />
                                 <MUILink href="mailto://info@unonacleaning.com" style={{textDecoration: "none"}}>
                                     <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
                                         info@unonacleaning.com
@@ -143,6 +160,40 @@ const DesktopFooter = () => {
                                 </MUILink>
                             </Stack>
                         </Box>
+
+                        <Box>
+                            <Stack direction="row" spacing={4}>
+                                <ScheduleOutlined
+                                    sx={{
+                                        color: "colors.accent",
+                                        padding: 1,
+                                        fontSize: 32,
+                                        cursor: "pointer"
+                                    }}
+                                />
+                                <MUILink href="#" style={{textDecoration: "none"}}>
+                                    <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                        Mon-Fri: 09:.00 am - 05:00 pm
+                                    </Typography>
+                                </MUILink>
+                            </Stack>
+                        </Box>
+                        <Box>
+                            <Stack direction="row" spacing={4}>
+                                <ScheduleOutlined
+                                    sx={{
+                                        color: "colors.accent",
+                                        padding: 1,
+                                        fontSize: 32,
+                                        cursor: "pointer"
+                                    }}
+                                />
+                                    <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                        Saturday, Sunday: closed
+                                    </Typography>
+                            </Stack>
+                        </Box>
+
                     </Stack>
                 </Grid>
             </Grid>
