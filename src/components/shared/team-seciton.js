@@ -42,7 +42,7 @@ const TeamSection = () => {
                                 )
                             })}
                             <Grid item={true} xs={12} md={6} lg={2}>
-                                <Stack direction="row" alignItems="center" justifyContent="center">
+                                <Stack sx={{height: "100%"}} direction="row" alignItems="center" justifyContent="center">
                                     <TrendingFlatOutlined
                                         sx={{
                                             color: "icon.secondary",

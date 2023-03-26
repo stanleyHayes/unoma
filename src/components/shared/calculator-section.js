@@ -1,7 +1,4 @@
 import {Box, Container, Grid, Stack, Typography} from "@mui/material";
-import {TrendingFlatOutlined} from "@mui/icons-material";
-import {UNOMA_DATA} from "../../utils/data";
-import Staff from "./staff";
 import Calculator from "./calculator";
 
 const CalculatorSection = () => {

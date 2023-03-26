@@ -1,11 +1,5 @@
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
-import {
-    GroupOutlined,
-    LightModeOutlined,
-    PixOutlined,
-    WorkspacePremiumOutlined,
-    WorkspacesOutlined
-} from "@mui/icons-material";
+import {GroupOutlined, PixOutlined, WorkspacePremiumOutlined, WorkspacesOutlined} from "@mui/icons-material";
 import {Link} from "react-router-dom";
 import Choice from "./choice";
 

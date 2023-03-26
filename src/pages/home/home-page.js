@@ -9,6 +9,7 @@ import FAQsSection from "../../components/shared/faq-section";
 import BlogSection from "../../components/shared/blog-section";
 import ReviewsSection from "../../components/shared/reviews-section";
 import {Element} from "react-scroll";
+import PortfolioSection from "../../components/shared/portfolio-section";
 
 const HomePage = () => {
 
@@ -32,7 +33,12 @@ const HomePage = () => {
                 <AnimatedSection>
                     <TeamSection/>
                 </AnimatedSection>
+
+                <AnimatedSection backgroundColor="light.accent">
+                    <PortfolioSection/>
+                </AnimatedSection>
             </Element>
+
 
             <Element name="calculator">
                 <AnimatedSection>
