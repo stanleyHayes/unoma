@@ -114,7 +114,6 @@ const DesktopFooter = () => {
                                 <CallOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        padding: 1,
                                         fontSize: 32,
                                         cursor: "pointer"
                                     }}
@@ -131,7 +130,6 @@ const DesktopFooter = () => {
                                 <LocationOnOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        padding: 1,
                                         fontSize: 32,
                                         cursor: "pointer"
                                     }}
@@ -148,7 +146,6 @@ const DesktopFooter = () => {
                                 <MailOutline
                                     sx={{
                                         color: "colors.accent",
-                                        padding: 1,
                                         fontSize: 32,
                                         cursor: "pointer"
                                     }}
@@ -166,7 +163,6 @@ const DesktopFooter = () => {
                                 <ScheduleOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        padding: 1,
                                         fontSize: 32,
                                         cursor: "pointer"
                                     }}
@@ -183,7 +179,6 @@ const DesktopFooter = () => {
                                 <ScheduleOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        padding: 1,
                                         fontSize: 32,
                                         cursor: "pointer"
                                     }}

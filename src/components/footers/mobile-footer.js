@@ -20,7 +20,6 @@ const MobileFooter = () => {
                     <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            padding: 1,
                             fontSize: 32,
                             borderRadius: "100%",
                         }}
@@ -54,7 +53,6 @@ const MobileFooter = () => {
                     <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            padding: 1,
                             fontSize: 32,
                             borderRadius: "100%",
                         }}
@@ -97,7 +95,6 @@ const MobileFooter = () => {
                     <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            padding: 1,
                             fontSize: 32,
                             borderRadius: "100%",
                         }}
@@ -141,7 +138,6 @@ const MobileFooter = () => {
                     <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            padding: 1,
                             fontSize: 32,
                             borderRadius: "100%",
                         }}
@@ -153,11 +149,10 @@ const MobileFooter = () => {
                     <AccordionDetails sx={{backgroundColor: "colors.footer"}}>
                         <Stack spacing={2}>
                             <Box>
-                                <Stack direction="row" spacing={2}>
+                                <Stack direction="row" spacing={4}>
                                     <CallOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            padding: 1,
                                             fontSize: 32,
                                             cursor: "pointer"
                                         }}
@@ -174,7 +169,6 @@ const MobileFooter = () => {
                                     <LocationOnOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            padding: 1,
                                             fontSize: 32,
                                             cursor: "pointer"
                                         }}
@@ -191,7 +185,6 @@ const MobileFooter = () => {
                                     <MailOutline
                                         sx={{
                                             color: "colors.accent",
-                                            padding: 1,
                                             fontSize: 32,
                                             cursor: "pointer"
                                         }}
@@ -209,7 +202,6 @@ const MobileFooter = () => {
                                     <ScheduleOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            padding: 1,
                                             fontSize: 32,
                                             cursor: "pointer"
                                         }}
@@ -226,7 +218,6 @@ const MobileFooter = () => {
                                     <ScheduleOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            padding: 1,
                                             fontSize: 32,
                                             cursor: "pointer"
                                         }}
