@@ -1,8 +1,12 @@
-import {Box, Button, Container, Divider, Grid, Stack, Typography} from "@mui/material";
-import Service from "./service";
-import {LightModeOutlined, NorthEastOutlined} from "@mui/icons-material";
+import {Box, Button, Card, CardContent, Container, Divider, Grid, Stack, Typography} from "@mui/material";
+import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {selectFAQs} from "../../redux/features/faqs/faqs-slice";
+import FAQ from "./faq";
 
 const FAQsSection = () => {
+
+    const {faqs} = useSelector(selectFAQs);
 
     return (
         <Box sx={{width: "100%"}}>
@@ -36,163 +40,48 @@ const FAQsSection = () => {
 
                     <Box>
                         <Grid container={true} spacing={4} justifyContent="space-between">
-                            <Grid item={true} xs={12} md={6}>
-                                <Grid container={true} spacing={2}>
-                                    <Grid item={true} xs={12} md={6}>
-                                        <Service
-                                            backgroundColor="light.accent"
-                                            icon={
-                                                <LightModeOutlined
-                                                    sx={{
-                                                        color: "colors.accent",
-                                                        padding: 1,
-                                                        fontSize: 32,
-                                                        borderRadius: "100%",
-                                                        backgroundColor: "icon.accentBackground"
-                                                    }}
-                                                />
-                                            }
-                                            title="Residential cleaning premises"
-                                            count={4}
-                                        />
-                                    </Grid>
-                                    <Grid item={true} xs={12} md={6}>
-                                        <Service
-                                            backgroundColor="light.secondary"
-                                            icon={
-                                                <LightModeOutlined
-                                                    sx={{
-                                                        color: "icon.secondary",
-                                                        padding: 1,
-                                                        fontSize: 32,
-                                                        borderRadius: "100%",
-                                                        backgroundColor: "icon.secondaryBackground"
-                                                    }}
-                                                />
-                                            }
-                                            title="Non-residential cleaning premises"
-                                            count={5}
-                                        />
-                                    </Grid>
-                                    <Grid item={true} xs={12} md={6}>
-                                        <Service
-                                            backgroundColor="light.secondary"
-                                            icon={
-                                                <LightModeOutlined
-                                                    sx={{
-                                                        color: "icon.secondary",
-                                                        padding: 1,
-                                                        fontSize: 32,
-                                                        borderRadius: "100%",
-                                                        backgroundColor: "icon.secondaryBackground"
-                                                    }}
-                                                />
-                                            }
-                                            title="Showcase window cleaning"
-                                            count={3}
-                                        />
-                                    </Grid>
-                                    <Grid item={true} xs={12} md={6}>
-                                        <Service
-                                            backgroundColor="light.secondary"
-                                            icon={
-                                                <LightModeOutlined
-                                                    sx={{
-                                                        color: "icon.secondary",
-                                                        padding: 1,
-                                                        fontSize: 32,
-                                                        borderRadius: "100%",
-                                                        backgroundColor: "icon.secondaryBackground"
-                                                    }}
-                                                />
-                                            }
-                                            title="Dry cleaning furniture"
-                                            count={6}
-                                        />
-                                    </Grid>
-                                </Grid>
-                            </Grid>
                             <Grid item={true} xs={12} md={4}>
+                                <Card
+                                    elevation={0}
+                                    variant="elevation"
+                                    sx={{backgroundColor: "light.accent", borderRadius: 2}}>
+                                    <CardContent>
+                                        <Typography variant="h6" sx={{color: "text.primary", fontWeight: 700, mb: 2}}>
+                                            Couldn't find an answer to your question?
+                                        </Typography>
+                                        <Typography variant="body2" sx={{color: "text.secondary", mb: 4}}>
+                                            Please leave a request and we will contact you shortly.
+                                        </Typography>
+                                        <Link to="/contact" style={{textDecoration: "none"}}>
+                                            <Button
+                                                disableElevation={true}
+                                                variant="contained"
+                                                size="large"
+                                                sx={{
+                                                    textTransform: "capitalize",
+                                                    color: "white",
+                                                    backgroundColor: "colors.footer",
+                                                    fontFamily: "OgelicRegular"
+                                                }}>
+                                                Contact Us
+                                            </Button>
+                                        </Link>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                            <Grid item={true} xs={12} md={5}>
                                 <Box>
                                     <Stack
                                         sx={{width: "100%"}}
                                         spacing={2}
-                                        divider={<Divider light={true} sx={{py: 1}} variant="fullWidth"/>}>
-                                        <Button
-                                            fullWidth={true}
-                                            endIcon={
-                                                <NorthEastOutlined
-                                                    sx={{
-                                                        color: "secondary.main",
-                                                        fontSize: 32
-                                                    }}
-                                                />
-                                            }
-                                            variant="text"
-                                            sx={{
-                                                color: "text.primary",
-                                                textTransform: "none",
-                                                justifyContent: "space-between"
-                                            }}>
-                                            General cleaning
-                                        </Button>
-
-                                        <Button
-                                            fullWidth={true}
-                                            endIcon={
-                                                <NorthEastOutlined
-                                                    sx={{
-                                                        color: "secondary.main",
-                                                        fontSize: 32
-                                                    }}
-                                                />
-                                            }
-                                            variant="text"
-                                            sx={{
-                                                color: "text.primary",
-                                                textTransform: "none",
-                                                justifyContent: "space-between"
-                                            }}>
-                                            Maintenance cleaning
-                                        </Button>
-
-                                        <Button
-                                            fullWidth={true}
-                                            endIcon={
-                                                <NorthEastOutlined
-                                                    sx={{
-                                                        color: "secondary.main",
-                                                        fontSize: 32
-                                                    }}
-                                                />
-                                            }
-                                            variant="text"
-                                            sx={{
-                                                color: "text.primary",
-                                                textTransform: "none",
-                                                justifyContent: "space-between"
-                                            }}>
-                                            Cleaning after renovation
-                                        </Button>
-
-                                        <Button
-                                            fullWidth={true}
-                                            endIcon={
-                                                <NorthEastOutlined
-                                                    sx={{
-                                                        color: "secondary.main",
-                                                        fontSize: 32
-                                                    }}
-                                                />
-                                            }
-                                            variant="text"
-                                            sx={{
-                                                color: "text.primary",
-                                                textTransform: "none",
-                                                justifyContent: "space-between"
-                                            }}>
-                                            Cleaning before / after tenants
-                                        </Button>
+                                        divider={<Divider light={true} variant="fullWidth"/>}>
+                                        {faqs.map((faq, index) => {
+                                            return (
+                                                <Box key={index}>
+                                                    <FAQ faq={faq}/>
+                                                </Box>
+                                            )
+                                        })}
                                     </Stack>
                                 </Box>
                             </Grid>

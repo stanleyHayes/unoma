@@ -2,6 +2,7 @@ import {Box, Container, Grid, Stack, Typography} from "@mui/material";
 import {TrendingFlatOutlined} from "@mui/icons-material";
 import {UNOMA_DATA} from "../../utils/data";
 import Staff from "./staff";
+import Calculator from "./calculator";
 
 const CalculatorSection = () => {
     return (
@@ -12,12 +13,13 @@ const CalculatorSection = () => {
                         <Typography
                             variant="h4"
                             sx={{color: "text.primary", fontFamily: "SatrevaNova", fontWeight: 700}}>
-                            We employ only{" "}
+                            You can{" "}
                             <Typography
                                 component="span"
                                 variant="h4" sx={{color: "secondary.main", fontFamily: "SatrevaNova", fontWeight: 700}}>
-                                professionals in their field
+                                calculate the cost
                             </Typography>
+                            {" "} by yourself
                         </Typography>
                     </Box>
 
@@ -33,28 +35,7 @@ const CalculatorSection = () => {
                     </Box>
 
                     <Box>
-                        <Grid container={true} spacing={2}>
-                            {UNOMA_DATA.STAFF.map((staff, index) => {
-                                return (
-                                    <Grid key={index} item={true} xs={12} md={4} lg={2}>
-                                        <Staff staff={staff}/>
-                                    </Grid>
-                                )
-                            })}
-                            <Grid item={true} xs={12} md={6} lg={2}>
-                                <Stack direction="row" alignItems="center" justifyContent="center">
-                                    <TrendingFlatOutlined
-                                        sx={{
-                                            color: "icon.secondary",
-                                            padding: 1,
-                                            fontSize: 80,
-                                            borderRadius: "100%",
-                                            backgroundColor: "icon.secondaryBackground"
-                                        }}
-                                    />
-                                </Stack>
-                            </Grid>
-                        </Grid>
+                       <Calculator />
                     </Box>
                 </Stack>
             </Container>

@@ -1,9 +1,13 @@
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
-import {UNOMA_DATA} from "../../utils/data";
-import Staff from "./staff";
+import {useSelector} from "react-redux";
+import {selectArticles} from "../../redux/features/articles/articles-slice";
+import Article from "./article";
 
 const BlogSection = () => {
+
+    const {articles} = useSelector(selectArticles);
+
     return (
         <Box sx={{width: "100%"}}>
             <Container maxWidth="xl">
@@ -35,10 +39,10 @@ const BlogSection = () => {
 
                     <Box>
                         <Grid container={true} spacing={2}>
-                            {UNOMA_DATA.STAFF.map((staff, index) => {
+                            {articles?.map((article, index) => {
                                 return (
                                     <Grid key={index} item={true} xs={12} md={6} lg={3}>
-                                        <Staff staff={staff}/>
+                                        <Article article={article} />
                                     </Grid>
                                 )
                             })}
@@ -59,7 +63,8 @@ const BlogSection = () => {
                                             borderRadius: 2,
                                             borderWidth: 2,
                                             borderColor: "colors.accent",
-                                            borderStyle: "solid"
+                                            borderStyle: "solid",
+                                            fontFamily: "OgelicRegular"
                                         }}>
                                         Go to the Blog
                                     </Button>

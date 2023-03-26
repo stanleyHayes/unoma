@@ -5,7 +5,7 @@ const Staff = ({staff}) => {
         <Card elevation={0} sx={{backgroundColor: "background.default"}}>
             <CardMedia
                 component="img"
-                sx={{borderRadius: 2, height: 200, objectFit: "cover", objectPosition: "top"}}
+                sx={{borderRadius: 2, height: 300, objectFit: "cover", objectPosition: "top"}}
                 src={staff.image}
             />
             <CardContent>
@@ -13,7 +13,7 @@ const Staff = ({staff}) => {
                     <Typography variant="h6" align="center" sx={{color: "text.primary", fontWeight: 600}}>
                         {staff.name}
                     </Typography>
-                    <Typography variant="body2" align="center" sx={{color: "text.secondary", fontWeight: 600}}>
+                    <Typography variant="body2" align="center" sx={{color: "text.secondary"}}>
                         {`${staff.years_of_experience} year${staff.years_of_experience === 1 ?'': 's'} experience`}
                     </Typography>
                 </Stack>

@@ -10,7 +10,7 @@ const Service = ({icon, title, count, backgroundColor = "light.secondary"}) => {
                             {icon}
                         </Stack>
                     </Box>
-                    <Typography variant="h6" align="center" sx={{color: "text.primary"}}>
+                    <Typography variant="h6" align="center" sx={{color: "text.primary", fontWeight: 700}}>
                         {title}
                     </Typography>
                     <Typography variant="body2" align="center" sx={{color: "text.secondary"}}>

@@ -1,5 +1,11 @@
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
-import {LightModeOutlined} from "@mui/icons-material";
+import {
+    GroupOutlined,
+    LightModeOutlined,
+    PixOutlined,
+    WorkspacePremiumOutlined,
+    WorkspacesOutlined
+} from "@mui/icons-material";
 import {Link} from "react-router-dom";
 import Choice from "./choice";
 
@@ -39,7 +45,7 @@ const ChoicesSection = () => {
                             <Grid item={true}  xs={12} md={6} lg={3}>
                                 <Choice
                                     icon={
-                                        <LightModeOutlined
+                                        <GroupOutlined
                                             sx={{
                                                 color: "icon.secondary",
                                                 padding: 1,
@@ -49,14 +55,14 @@ const ChoicesSection = () => {
                                             }}
                                         />
                                     }
-                                    title="Strict adherence to cleaning standards"
+                                    title="The team of professionals"
                                     description="The most top-end equipment, the most expensive environmentally friendly safe chemicals"
                                 />
                             </Grid>
                             <Grid item={true}  xs={12} md={6} lg={3}>
                                 <Choice
                                     icon={
-                                        <LightModeOutlined
+                                        <WorkspacePremiumOutlined
                                             sx={{
                                                 color: "icon.secondary",
                                                 padding: 1,
@@ -66,14 +72,14 @@ const ChoicesSection = () => {
                                             }}
                                         />
                                     }
-                                    title="Strict adherence to cleaning standards"
+                                    title="Our approach to pricing"
                                     description="The most top-end equipment, the most expensive environmentally friendly safe chemicals"
                                 />
                             </Grid>
                             <Grid item={true}  xs={12} md={6} lg={3}>
                                 <Choice
                                     icon={
-                                        <LightModeOutlined
+                                        <PixOutlined
                                             sx={{
                                                 color: "icon.secondary",
                                                 padding: 1,
@@ -83,14 +89,14 @@ const ChoicesSection = () => {
                                             }}
                                         />
                                     }
-                                    title="Strict adherence to cleaning standards"
+                                    title="Guaranteed quality of cleaning"
                                     description="The most top-end equipment, the most expensive environmentally friendly safe chemicals"
                                 />
                             </Grid>
                             <Grid item={true} xs={12} md={6} lg={3}>
                                 <Choice
                                     icon={
-                                        <LightModeOutlined
+                                        <WorkspacesOutlined
                                             sx={{
                                                 color: "icon.secondary",
                                                 padding: 1,
@@ -121,7 +127,8 @@ const ChoicesSection = () => {
                                             borderRadius: 2,
                                             borderWidth: 2,
                                             borderColor: "colors.accent",
-                                            borderStyle: "solid"
+                                            borderStyle: "solid",
+                                            fontFamily: "OgelicRegular"
                                         }}>
                                         Contact Us
                                     </Button>

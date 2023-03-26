@@ -62,7 +62,8 @@ const Banner = () => {
                                                     textTransform: "capitalize",
                                                     color: "white",
                                                     borderRadius: 2,
-                                                    backgroundColor: "secondary.main"
+                                                    backgroundColor: "secondary.main",
+                                                    fontFamily: "OgelicRegular"
                                                 }}>
                                                 Contact Us
                                             </Button>

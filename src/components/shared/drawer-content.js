@@ -116,7 +116,8 @@ const DrawerContent = () => {
                                     sx={{
                                         textTransform: "capitalize",
                                         color: "colors.accent",
-                                        cursor: "pointer"
+                                        cursor: "pointer",
+                                        fontFamily: "OgelicRegular"
                                     }}>
                                     +38 033-426 86 44
                                 </Button>
@@ -133,7 +134,8 @@ const DrawerContent = () => {
                                     borderRadius: 2,
                                     borderWidth: 2,
                                     borderColor: "colors.accent",
-                                    borderStyle: "solid"
+                                    borderStyle: "solid",
+                                    fontFamily: "OgelicRegular"
                                 }}>
                                 Contact Us
                             </Button>

@@ -2,7 +2,7 @@ import {createTheme} from "@mui/material";
 
 const lightTheme = createTheme({
     typography: {
-        fontFamily: "Urbanist, RayleighGlamour, SatrevaNova"
+        fontFamily: "Urbanist, RayleighGlamour, SatrevaNova, OgelicRegular"
     },
     palette: {
         primary: {
@@ -42,7 +42,7 @@ const lightTheme = createTheme({
 
 const darkTheme = createTheme({
     typography: {
-        fontFamily: "Urbanist, RayleighGlamour, SatrevaNova"
+        fontFamily: "Urbanist, RayleighGlamour, SatrevaNova, OgelicRegular"
     },
     palette: {
         primary: {

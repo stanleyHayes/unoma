@@ -7,6 +7,8 @@ const Choice = ({icon, title, description}) => {
             sx={{
                 borderWidth: 2,
                 borderColor: "light.secondary",
+                backgroundColor: "background.default",
+                height: "100%",
                 borderRadius: 2,
                 '&:hover': {
                     transition: "500ms all ease-out",

@@ -27,6 +27,7 @@ const MobileHeader = () => {
                                 color: "colors.accent",
                                 borderWidth: 0.5,
                                 fontSize: 32,
+                                padding: 1,
                                 borderRadius: "100%",
                                 backgroundColor: "icon.accentBackground"
                             }}/>
@@ -51,9 +52,9 @@ const MobileHeader = () => {
                             <WifiCalling3Outlined
                                 sx={{
                                     color: "colors.accent",
-                                    borderWidth: 0.5,
                                     fontSize: 32,
                                     borderRadius: "100%",
+                                    padding: 1,
                                     backgroundColor: "icon.accentBackground"
                                 }}/>
                         </MUILink>

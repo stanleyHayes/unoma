@@ -1,9 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
+import {reviews} from "./reviews";
 
 const reviewSlice = createSlice({
     name: "review",
     initialState: {
-        reviews: [],
+        reviews: [...reviews],
         reviewLoading: false,
         reviewError: null
     },
@@ -11,6 +12,6 @@ const reviewSlice = createSlice({
 });
 
 const {reducer} = reviewSlice;
-export const selectReviews = state => state.review;
+export const selectReviews = state => state.reviews;
 
 export default reducer;
