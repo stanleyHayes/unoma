@@ -28,11 +28,9 @@ const DrawerContent = () => {
                             color: "colors.accent",
                             padding: 1,
                             fontSize: 32,
-                            borderRadius: "100%",
+                            borderRadius: "25%",
                             cursor: "pointer",
-                            borderWidth: 0.5,
-                            borderStyle: "solid",
-                            borderColor: "colors.accent"
+                            backgroundColor: "icon.accentBackground"
                         }}/>
 
                     <AnimatePresence initial={true} mode="sync">
@@ -44,7 +42,7 @@ const DrawerContent = () => {
                                         color: "colors.accent",
                                         padding: 1,
                                         fontSize: 32,
-                                        borderRadius: "100%",
+                                        borderRadius: "25%",
                                         cursor: "pointer",
                                         backgroundColor: "icon.accentBackground"
                                     }}/>
@@ -60,7 +58,7 @@ const DrawerContent = () => {
                                         color: "colors.accent",
                                         padding: 1,
                                         fontSize: 32,
-                                        borderRadius: "100%",
+                                        borderRadius: "25%",
                                         cursor: "pointer",
                                         backgroundColor: "icon.accentBackground"
                                     }}/>
@@ -87,12 +85,12 @@ const DrawerContent = () => {
 
                 <Box sx={{px: 4}}>
                     <Stack direction="column" spacing={3}>
-                        <NavigationLink path="/" label="Home"/>
-                        <NavigationLink path="/services" label="Our Services"/>
-                        <NavigationLink path="/calculator" label="Calculator"/>
-                        <NavigationLink path="/reviews" label="Reviews"/>
-                        <NavigationLink path="/articles" label="Our Blog"/>
-                        <NavigationLink path="/faqs" label="FAQ's"/>
+                        <NavigationLink path="home" label="Home"/>
+                        <NavigationLink path="services" label="Our Services"/>
+                        <NavigationLink path="calculator" label="Calculator"/>
+                        <NavigationLink path="reviews" label="Reviews"/>
+                        <NavigationLink path="articles" label="Our Blog"/>
+                        <NavigationLink path="faqs" label="FAQ's"/>
                     </Stack>
                 </Box>
 
@@ -105,7 +103,7 @@ const DrawerContent = () => {
                                         color: "colors.accent",
                                         padding: 1,
                                         fontSize: 32,
-                                        borderRadius: "100%",
+                                        borderRadius: "25%",
                                         backgroundColor: "icon.accentBackground"
                                     }}/>
                             </MUILink>

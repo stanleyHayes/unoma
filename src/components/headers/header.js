@@ -5,7 +5,7 @@ import MobileHeader from "./mobile-header";
 const Header = () => {
 
     return (
-        <AppBar position="fixed" square={true} variant="elevation" elevation={0}>
+        <AppBar position="fixed" sx={{top: 0}} square={true} variant="elevation" elevation={0}>
             <Box sx={{display: {xs: "none", lg: "block"}}}>
                 <DesktopHeader />
             </Box>

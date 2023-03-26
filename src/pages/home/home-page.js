@@ -8,45 +8,55 @@ import CalculatorSection from "../../components/shared/calculator-section";
 import FAQsSection from "../../components/shared/faq-section";
 import BlogSection from "../../components/shared/blog-section";
 import ReviewsSection from "../../components/shared/reviews-section";
-
+import {Element} from "react-scroll";
 
 const HomePage = () => {
 
     return (
         <Layout>
-            <AnimatedSection>
-                <Banner/>
-            </AnimatedSection>
+            <Element name="home">
+                <AnimatedSection>
+                    <Banner/>
+                </AnimatedSection>
+            </Element>
 
-            <AnimatedSection>
-                <ServicesSection/>
-            </AnimatedSection>
+            <Element name="services">
+                <AnimatedSection>
+                    <ServicesSection/>
+                </AnimatedSection>
 
-            <AnimatedSection>
-                <ChoicesSection/>
-            </AnimatedSection>
+                <AnimatedSection>
+                    <ChoicesSection/>
+                </AnimatedSection>
 
-            <AnimatedSection>
-                <TeamSection/>
-            </AnimatedSection>
+                <AnimatedSection>
+                    <TeamSection/>
+                </AnimatedSection>
+            </Element>
 
-            <AnimatedSection>
-                <CalculatorSection/>
-            </AnimatedSection>
+            <Element name="calculator">
+                <AnimatedSection>
+                    <CalculatorSection/>
+                </AnimatedSection>
+            </Element>
 
-            <AnimatedSection>
-                <ReviewsSection/>
-            </AnimatedSection>
+            <Element name="reviews">
+                <AnimatedSection>
+                    <ReviewsSection/>
+                </AnimatedSection>
+            </Element>
 
-            <AnimatedSection>
-                <BlogSection/>
-            </AnimatedSection>
+            <Element name="articles">
+                <AnimatedSection>
+                    <BlogSection/>
+                </AnimatedSection>
+            </Element>
 
-            <AnimatedSection>
-                <FAQsSection/>
-            </AnimatedSection>
-
-
+            <Element name="faqs">
+                <AnimatedSection>
+                    <FAQsSection/>
+                </AnimatedSection>
+            </Element>
         </Layout>
     )
 }

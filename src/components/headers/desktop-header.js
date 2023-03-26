@@ -36,12 +36,12 @@ const DesktopHeader = () => {
                 </Grid>
                 <Grid item={true}>
                     <Stack direction="row" spacing={3} alignItems="center">
-                        <NavigationLink path="/" label="Home"/>
-                        <NavigationLink path="/services" label="Our Services"/>
-                        <NavigationLink path="/calculator" label="Calculator"/>
-                        <NavigationLink path="/reviews" label="Reviews"/>
-                        <NavigationLink path="/articles" label="Our Blog"/>
-                        <NavigationLink path="/faqs" label="FAQ's"/>
+                        <NavigationLink path="home" label="Home"/>
+                        <NavigationLink path="services" label="Our Services"/>
+                        <NavigationLink path="calculator" label="Calculator"/>
+                        <NavigationLink path="reviews" label="Reviews"/>
+                        <NavigationLink path="articles" label="Our Blog"/>
+                        <NavigationLink path="faqs" label="FAQ's"/>
                     </Stack>
                 </Grid>
 
@@ -56,7 +56,7 @@ const DesktopHeader = () => {
                                             color: "colors.accent",
                                             padding: 1,
                                             fontSize: 32,
-                                            borderRadius: "100%",
+                                            borderRadius: "25%",
                                             cursor: "pointer",
                                             backgroundColor: "icon.accentBackground"
                                         }}
@@ -73,7 +73,7 @@ const DesktopHeader = () => {
                                             color: "colors.accent",
                                             padding: 1,
                                             fontSize: 32,
-                                            borderRadius: "100%",
+                                            borderRadius: "25%",
                                             cursor: "pointer",
                                             backgroundColor: "icon.accentBackground"
                                         }}/>
@@ -87,7 +87,7 @@ const DesktopHeader = () => {
                                         color: "colors.accent",
                                         padding: 1,
                                         fontSize: 32,
-                                        borderRadius: "100%",
+                                        borderRadius: "25%",
                                         backgroundColor: "icon.accentBackground"
                                     }}/>
                             </MUILink>

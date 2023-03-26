@@ -1,15 +1,22 @@
-import {Box} from "@mui/material";
+import {Box, Container, Divider} from "@mui/material";
 import DesktopFooter from "./desktop-footer";
 import MobileFooter from "./mobile-footer";
+import Copyright from "../shared/copyright";
 
 const Footer = () => {
     return (
-        <Box>
-            <Box>
-                <DesktopFooter/>
+        <Box sx={{backgroundColor: "colors.footer", pt: 4}}>
+            <Box sx={{mb: 3}}>
+                <Container sx={{display: {xs: "none", lg: "block"}}}>
+                    <DesktopFooter/>
+                </Container>
+                <Box sx={{display: {xs: "block", lg: "none"}}}>
+                    <MobileFooter/>
+                </Box>
             </Box>
+            <Divider variant="fullWidth" sx={{backgroundColor: "rgba(255, 255, 255, 0.1)"}} light={true}/>
             <Box>
-                <MobileFooter />
+                <Copyright/>
             </Box>
         </Box>
     )

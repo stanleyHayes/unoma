@@ -20,7 +20,7 @@ const MobileHeader = () => {
         >
             <Grid container={true} alignItems="center" justifyContent="space-between">
                 <Grid item={true}>
-                    <Stack direction="row" spacing={1} alignItems="center">
+                    <Stack direction="row" spacing={1.5} alignItems="center">
                         <Menu
                             onClick={() => dispatch(UI_ACTION_CREATORS.toggleDrawer(true))}
                             sx={{
@@ -28,12 +28,12 @@ const MobileHeader = () => {
                                 borderWidth: 0.5,
                                 fontSize: 32,
                                 padding: 1,
-                                borderRadius: "100%",
+                                borderRadius: "25%",
                                 backgroundColor: "icon.accentBackground"
                             }}/>
                         <Link to="/" style={{textDecoration: "none"}}>
                             <Typography
-                                variant="h6"
+                                variant="h5"
                                 sx={{
                                     textTransform: "uppercase",
                                     color: "colors.accent",
@@ -53,7 +53,7 @@ const MobileHeader = () => {
                                 sx={{
                                     color: "colors.accent",
                                     fontSize: 32,
-                                    borderRadius: "100%",
+                                    borderRadius: "25%",
                                     padding: 1,
                                     backgroundColor: "icon.accentBackground"
                                 }}/>
@@ -67,7 +67,7 @@ const MobileHeader = () => {
                                             color: "colors.accent",
                                             padding: 1,
                                             fontSize: 32,
-                                            borderRadius: "100%",
+                                            borderRadius: "25%",
                                             backgroundColor: "icon.accentBackground"
                                         }}/>
                                 </Box>
@@ -82,7 +82,7 @@ const MobileHeader = () => {
                                             color: "colors.accent",
                                             padding: 1,
                                             fontSize: 32,
-                                            borderRadius: "100%",
+                                            borderRadius: "25%",
                                             backgroundColor: "icon.accentBackground"
                                         }}/>
                                 </Box>
