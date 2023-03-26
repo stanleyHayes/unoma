@@ -1,8 +1,7 @@
-import {Box, Grid, Stack, Typography, Link as MUILink, CardMedia} from "@mui/material";
+import {Box, CardMedia, Grid, Link as MUILink, Stack, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
 import logo from "../../assets/images/logo/logo.png";
-import {UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
-import {CallOutlined, LightModeOutlined, LocationOnOutlined, MailOutline, ScheduleOutlined} from "@mui/icons-material";
+import {CallOutlined, LocationOnOutlined, MailOutline, ScheduleOutlined} from "@mui/icons-material";
 
 const DesktopFooter = () => {
     return (
@@ -110,11 +109,11 @@ const DesktopFooter = () => {
                             Contact Info
                         </Typography>
                         <Box>
-                            <Stack direction="row" spacing={2}>
+                            <Stack direction="row" spacing={2} alignItems="center">
                                 <CallOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        fontSize: 32,
+                                        fontSize: 24,
                                         cursor: "pointer"
                                     }}
                                 />
@@ -126,11 +125,11 @@ const DesktopFooter = () => {
                             </Stack>
                         </Box>
                         <Box>
-                            <Stack direction="row" spacing={4}>
+                            <Stack direction="row" spacing={4} alignItems="center">
                                 <LocationOnOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        fontSize: 32,
+                                        fontSize: 24,
                                         cursor: "pointer"
                                     }}
                                 />
@@ -142,11 +141,11 @@ const DesktopFooter = () => {
                             </Stack>
                         </Box>
                         <Box>
-                            <Stack direction="row" spacing={4}>
+                            <Stack direction="row" spacing={4} alignItems="center">
                                 <MailOutline
                                     sx={{
                                         color: "colors.accent",
-                                        fontSize: 32,
+                                        fontSize: 24,
                                         cursor: "pointer"
                                     }}
                                 />
@@ -159,11 +158,11 @@ const DesktopFooter = () => {
                         </Box>
 
                         <Box>
-                            <Stack direction="row" spacing={4}>
+                            <Stack direction="row" spacing={4} alignItems="center">
                                 <ScheduleOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        fontSize: 32,
+                                        fontSize: 24,
                                         cursor: "pointer"
                                     }}
                                 />
@@ -175,11 +174,11 @@ const DesktopFooter = () => {
                             </Stack>
                         </Box>
                         <Box>
-                            <Stack direction="row" spacing={4}>
+                            <Stack direction="row" spacing={4} alignItems="center">
                                 <ScheduleOutlined
                                     sx={{
                                         color: "colors.accent",
-                                        fontSize: 32,
+                                        fontSize: 24,
                                         cursor: "pointer"
                                     }}
                                 />

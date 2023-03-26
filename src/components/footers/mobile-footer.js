@@ -17,10 +17,10 @@ const MobileFooter = () => {
         <Box>
             <Stack spacing={1}>
                 <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
-                    <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
+                    <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            fontSize: 32,
+                            fontSize: 24,
                             borderRadius: "100%",
                         }}
                     />}>
@@ -50,10 +50,10 @@ const MobileFooter = () => {
                 </Accordion>
 
                 <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
-                    <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
+                    <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            fontSize: 32,
+                            fontSize: 24,
                             borderRadius: "100%",
                         }}
                     />}>
@@ -92,10 +92,10 @@ const MobileFooter = () => {
                     </AccordionDetails>
                 </Accordion>
                 <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
-                    <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
+                    <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            fontSize: 32,
+                            fontSize: 24,
                             borderRadius: "100%",
                         }}
                     />}>
@@ -135,10 +135,10 @@ const MobileFooter = () => {
                     </AccordionDetails>
                 </Accordion>
                 <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
-                    <AccordionSummary  sx={{backgroundColor: "colors.footer"}} expandIcon={<South
+                    <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
-                            fontSize: 32,
+                            fontSize: 24,
                             borderRadius: "100%",
                         }}
                     />}>
@@ -149,11 +149,11 @@ const MobileFooter = () => {
                     <AccordionDetails sx={{backgroundColor: "colors.footer"}}>
                         <Stack spacing={2}>
                             <Box>
-                                <Stack direction="row" spacing={4}>
+                                <Stack direction="row" spacing={4} alignItems="center">
                                     <CallOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            fontSize: 32,
+                                            fontSize: 24,
                                             cursor: "pointer"
                                         }}
                                     />
@@ -165,11 +165,11 @@ const MobileFooter = () => {
                                 </Stack>
                             </Box>
                             <Box>
-                                <Stack direction="row" spacing={4}>
+                                <Stack direction="row" spacing={4} alignItems="center">
                                     <LocationOnOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            fontSize: 32,
+                                            fontSize: 24,
                                             cursor: "pointer"
                                         }}
                                     />
@@ -181,11 +181,11 @@ const MobileFooter = () => {
                                 </Stack>
                             </Box>
                             <Box>
-                                <Stack direction="row" spacing={4}>
+                                <Stack direction="row" spacing={4} alignItems="center">
                                     <MailOutline
                                         sx={{
                                             color: "colors.accent",
-                                            fontSize: 32,
+                                            fontSize: 24,
                                             cursor: "pointer"
                                         }}
                                     />
@@ -198,11 +198,11 @@ const MobileFooter = () => {
                             </Box>
 
                             <Box>
-                                <Stack direction="row" spacing={4}>
+                                <Stack direction="row" spacing={4} alignItems="center">
                                     <ScheduleOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            fontSize: 32,
+                                            fontSize: 24,
                                             cursor: "pointer"
                                         }}
                                     />
@@ -214,11 +214,11 @@ const MobileFooter = () => {
                                 </Stack>
                             </Box>
                             <Box>
-                                <Stack direction="row" spacing={4}>
+                                <Stack direction="row" spacing={4} alignItems="center">
                                     <ScheduleOutlined
                                         sx={{
                                             color: "colors.accent",
-                                            fontSize: 32,
+                                            fontSize: 24,
                                             cursor: "pointer"
                                         }}
                                     />
