@@ -109,7 +109,7 @@ const DesktopFooter = () => {
                             Contact Info
                         </Typography>
                         <Box>
-                            <Stack direction="row" spacing={2} alignItems="center">
+                            <Stack direction="row" spacing={4} alignItems="center">
                                 <CallOutlined
                                     sx={{
                                         color: "colors.accent",
