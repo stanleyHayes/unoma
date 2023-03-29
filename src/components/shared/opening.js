@@ -14,7 +14,7 @@ const Opening = ({opening}) => {
                 }
             }}>
             <CardContent>
-                <Grid container={true} spacing={4}>
+                <Grid container={true} spacing={2}>
                     <Grid item={true} xs={12} lg={4}>
                         <Stack spacing={1}>
                             <Typography variant="h6" sx={{color: "text.primary"}}>

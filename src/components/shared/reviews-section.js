@@ -66,7 +66,8 @@ const ReviewsSection = () => {
                                                 textTransform: "capitalize",
                                                 color: "white",
                                                 backgroundColor: "colors.footer",
-                                                fontFamily: "OgelicRegular"
+                                                fontFamily: "SatrevaNova",
+                                                fontWeight: 700
                                             }}>
                                             Leave a review
                                         </Button>

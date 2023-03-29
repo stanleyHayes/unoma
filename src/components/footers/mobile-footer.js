@@ -158,7 +158,9 @@ const MobileFooter = () => {
                                         }}
                                     />
                                     <MUILink href="tel://+380334268644" style={{textDecoration: "none"}}>
-                                        <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                        <Typography
+                                            variant="body2"
+                                            sx={{color: "white", fontWeight: "bold", fontFamily: "Urbanist"}}>
                                             +38 033-426 86 44
                                         </Typography>
                                     </MUILink>
@@ -174,7 +176,9 @@ const MobileFooter = () => {
                                         }}
                                     />
                                     <MUILink href="#" style={{textDecoration: "none"}}>
-                                        <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                        <Typography
+                                            variant="body2"
+                                            sx={{color: "white", fontWeight: "bold", fontFamily: "Urbanist"}}>
                                             Kyiv,Vidradnyi avenue 55
                                         </Typography>
                                     </MUILink>
@@ -190,7 +194,9 @@ const MobileFooter = () => {
                                         }}
                                     />
                                     <MUILink href="mailto://info@unonacleaning.com" style={{textDecoration: "none"}}>
-                                        <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                        <Typography
+                                            variant="body2"
+                                            sx={{color: "white", fontWeight: "bold", fontFamily: "Urbanist"}}>
                                             info@unonacleaning.com
                                         </Typography>
                                     </MUILink>
@@ -207,7 +213,9 @@ const MobileFooter = () => {
                                         }}
                                     />
                                     <MUILink href="#" style={{textDecoration: "none"}}>
-                                        <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                        <Typography
+                                            variant="body2"
+                                            sx={{color: "white", fontWeight: "bold", fontFamily: "Urbanist"}}>
                                             Mon-Fri: 09:.00 am - 05:00 pm
                                         </Typography>
                                     </MUILink>
@@ -222,7 +230,9 @@ const MobileFooter = () => {
                                             cursor: "pointer"
                                         }}
                                     />
-                                    <Typography variant="body2" sx={{color: "white", fontWeight: "bold"}}>
+                                    <Typography
+                                        variant="body2"
+                                        sx={{color: "white", fontWeight: "bold", fontFamily: "Urbanist"}}>
                                         Saturday, Sunday: closed
                                     </Typography>
                                 </Stack>

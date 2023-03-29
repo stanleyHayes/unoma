@@ -61,7 +61,7 @@ const darkTheme = createTheme({
         },
         text: {
             primary: "#fdfdfd",
-            secondary: "#8a8a88",
+            secondary: "rgba(241,241,248,0.3)",
             title: "#3d7df6",
             accent: "#c89743"
         },

@@ -6,7 +6,7 @@ import Carousel from "react-material-ui-carousel";
 const Banner = () => {
 
     return (
-        <Box sx={{width: "100%", minHeight: "60vh", alignItems: "center", display: "flex"}}>
+        <Box sx={{width: "100%", minHeight: "50vh", alignItems: "center", display: "flex"}}>
             <Container maxWidth="xl">
                 <Grid container={true} spacing={4} alignItems="center" justifyContent="space-between">
                     <Grid item={true} xs={12} md={6} lg={5}>
@@ -49,50 +49,52 @@ const Banner = () => {
                                     of
                                     cleanliness
                                 </Typography>
-                                <Grid container={true} spacing={4}>
-                                    <Grid item={true} xs={12} md={4}>
-                                        <Link
-                                            to="/contact"
-                                            style={{textDecoration: "none", width: "100%", display: "block"}}>
-                                            <Button
-                                                fullWidth={true}
-                                                size="large"
-                                                disableElevation={true}
-                                                sx={{
-                                                    textTransform: "capitalize",
-                                                    color: "white",
-                                                    borderRadius: 2,
-                                                    fontWeight: 700,
-                                                    backgroundColor: "secondary.main",
-                                                    fontFamily: "SatrevaNova"
-                                                }}>
-                                                Contact Us
-                                            </Button>
-                                        </Link>
+                                <Box>
+                                    <Grid container={true} spacing={2}>
+                                        <Grid item={true} xs={12} md={4}>
+                                            <Link
+                                                to="/contact"
+                                                style={{textDecoration: "none", width: "100%", display: "block"}}>
+                                                <Button
+                                                    fullWidth={true}
+                                                    size="large"
+                                                    disableElevation={true}
+                                                    sx={{
+                                                        textTransform: "capitalize",
+                                                        color: "white",
+                                                        borderRadius: 2,
+                                                        fontWeight: 700,
+                                                        backgroundColor: "secondary.main",
+                                                        fontFamily: "SatrevaNova"
+                                                    }}>
+                                                    Contact Us
+                                                </Button>
+                                            </Link>
+                                        </Grid>
+                                        <Grid item={true} xs={12} md={4}>
+                                            <Link
+                                                to="#"
+                                                style={{textDecoration: "none", width: "100%", display: "block"}}>
+                                                <Button
+                                                    fullWidth={true}
+                                                    size="large"
+                                                    disableElevation={true}
+                                                    sx={{
+                                                        textTransform: "capitalize",
+                                                        color: "secondary.main",
+                                                        borderRadius: 2,
+                                                        fontWeight: 700,
+                                                        borderColor: "secondary.main",
+                                                        borderStyle: "solid",
+                                                        borderWidth: 2,
+                                                        fontFamily: "SatrevaNova"
+                                                    }}>
+                                                    Schedule Call
+                                                </Button>
+                                            </Link>
+                                        </Grid>
                                     </Grid>
-                                    <Grid item={true} xs={12} md={4}>
-                                        <Link
-                                            to="#"
-                                            style={{textDecoration: "none", width: "100%", display: "block"}}>
-                                            <Button
-                                                fullWidth={true}
-                                                size="large"
-                                                disableElevation={true}
-                                                sx={{
-                                                    textTransform: "capitalize",
-                                                    color: "secondary.main",
-                                                    borderRadius: 2,
-                                                    fontWeight: 700,
-                                                    borderColor: "secondary.main",
-                                                    borderStyle: "solid",
-                                                    borderWidth: 2,
-                                                    fontFamily: "SatrevaNova"
-                                                }}>
-                                                Schedule Call
-                                            </Button>
-                                        </Link>
-                                    </Grid>
-                                </Grid>
+                                </Box>
                             </Stack>
                         </Box>
                     </Grid>
@@ -110,7 +112,10 @@ const Banner = () => {
                                             component="img"
                                             src={image}
                                             sx={{
-                                                borderRadius: 4,
+                                                borderTopLeftRadius: 64,
+                                                borderTopRightRadius: 0,
+                                                borderBottomRightRadius: 64,
+                                                borderBottomLeftRadius: 0,
                                                 objectFit: "cover",
                                                 objectPosition: "center",
                                                 width: "100%",

@@ -47,12 +47,13 @@ const Layout = ({children}) => {
                     <Box>
                         <Footer/>
                     </Box>
+
                 </Box>
                 <SwipeableDrawer
                     open={drawerOpen}
                     onOpen={() => dispatch(UI_ACTION_CREATORS.toggleDrawer(true))}
                     onClose={() => dispatch(UI_ACTION_CREATORS.toggleDrawer(false))}>
-                    <DrawerContent />
+                    <DrawerContent/>
                 </SwipeableDrawer>
             </Box>
         </React.Fragment>

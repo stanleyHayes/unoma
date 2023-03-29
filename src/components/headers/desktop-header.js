@@ -1,10 +1,10 @@
 import {Box, Button, Grid, Link as MUILink, Stack, Toolbar, Typography} from "@mui/material";
-import {Link} from "react-router-dom";
 import NavigationLink from "../shared/navigation-link";
 import {DarkModeOutlined, LightModeOutlined, WifiCalling3Outlined} from "@mui/icons-material";
 import {AnimatePresence, motion} from "framer-motion";
 import {selectUI, UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
 import {useDispatch, useSelector} from "react-redux";
+import {Link as ScrollLink} from "react-scroll";
 
 const DesktopHeader = () => {
 
@@ -16,11 +16,11 @@ const DesktopHeader = () => {
             sx={{
                 borderBottomWidth: 1,
                 borderBottomStyle: "solid",
-                borderBottomColor: "divider"
+                borderBottomColor: "colors.accent"
             }}>
             <Grid container={true} alignItems="center" justifyContent="space-around">
                 <Grid item={true}>
-                    <Link to="/" style={{textDecoration: "none"}}>
+                    <ScrollLink to="home" smooth={true} spy={true} offset={50} duration={500} delay={100}>
                         <Typography
                             variant="h4"
                             sx={{
@@ -32,7 +32,7 @@ const DesktopHeader = () => {
                             }}>
                             Unona
                         </Typography>
-                    </Link>
+                    </ScrollLink>
                 </Grid>
                 <Grid item={true}>
                     <Stack direction="row" spacing={3} alignItems="center">
@@ -105,7 +105,7 @@ const DesktopHeader = () => {
                                 </Button>
                             </MUILink>
                         </Stack>
-                        <Link to="/contact" style={{textDecoration: "none"}}>
+                        <ScrollLink to="contact" smooth={true} spy={true} offset={50} duration={500} delay={100}>
                             <Button
                                 variant="contained"
                                 disableElevation={true}
@@ -122,7 +122,7 @@ const DesktopHeader = () => {
                                 }}>
                                 Contact Us
                             </Button>
-                        </Link>
+                        </ScrollLink>
                     </Stack>
                 </Grid>
             </Grid>

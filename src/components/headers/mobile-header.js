@@ -15,9 +15,8 @@ const MobileHeader = () => {
             sx={{
                 borderBottomWidth: 1,
                 borderBottomStyle: "solid",
-                borderBottomColor: "divider"
-            }}
-        >
+                borderBottomColor: "colors.accent"
+            }}>
             <Grid container={true} alignItems="center" justifyContent="space-between">
                 <Grid item={true}>
                     <Stack direction="row" spacing={1.5} alignItems="center">

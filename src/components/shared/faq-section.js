@@ -61,7 +61,8 @@ const FAQsSection = () => {
                                                     textTransform: "capitalize",
                                                     color: "white",
                                                     backgroundColor: "colors.footer",
-                                                    fontFamily: "OgelicRegular"
+                                                    fontFamily: "SatrevaNova",
+                                                    fontWeight: 700
                                                 }}>
                                                 Contact Us
                                             </Button>

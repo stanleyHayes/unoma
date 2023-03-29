@@ -11,6 +11,9 @@ import ReviewsSection from "../../components/shared/reviews-section";
 import {Element} from "react-scroll";
 import PortfolioSection from "../../components/shared/portfolio-section";
 import OpeningSection from "../../components/shared/opening-section";
+import StatsSection from "../../components/shared/stats-section";
+import ContactSection from "../../components/shared/contact-section";
+import NewsletterSection from "../../components/shared/newsletter-section";
 
 const HomePage = () => {
 
@@ -20,6 +23,11 @@ const HomePage = () => {
                 <AnimatedSection>
                     <Banner/>
                 </AnimatedSection>
+
+                <AnimatedSection>
+                    <StatsSection/>
+                </AnimatedSection>
+
             </Element>
 
             <Element name="services">
@@ -50,6 +58,16 @@ const HomePage = () => {
             <Element name="openings">
                 <AnimatedSection>
                     <OpeningSection/>
+                </AnimatedSection>
+            </Element>
+
+            <Element name="contact">
+                <AnimatedSection>
+                    <ContactSection/>
+                </AnimatedSection>
+
+                <AnimatedSection>
+                    <NewsletterSection/>
                 </AnimatedSection>
             </Element>
 
