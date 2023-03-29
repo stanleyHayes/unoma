@@ -88,6 +88,7 @@ const DrawerContent = () => {
                         <NavigationLink path="home" label="Home"/>
                         <NavigationLink path="services" label="Our Services"/>
                         <NavigationLink path="calculator" label="Calculator"/>
+                        <NavigationLink path="openings" label="Careers"/>
                         <NavigationLink path="reviews" label="Reviews"/>
                         <NavigationLink path="articles" label="Our Blog"/>
                         <NavigationLink path="faqs" label="FAQ's"/>
@@ -115,7 +116,6 @@ const DrawerContent = () => {
                                         textTransform: "capitalize",
                                         color: "colors.accent",
                                         cursor: "pointer",
-                                        fontFamily: "OgelicRegular"
                                     }}>
                                     +38 033-426 86 44
                                 </Button>
@@ -133,7 +133,8 @@ const DrawerContent = () => {
                                     borderWidth: 2,
                                     borderColor: "colors.accent",
                                     borderStyle: "solid",
-                                    fontFamily: "OgelicRegular"
+                                    fontWeight: 700,
+                                    fontFamily: "SatrevaNova"
                                 }}>
                                 Contact Us
                             </Button>

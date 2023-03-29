@@ -39,6 +39,7 @@ const DesktopHeader = () => {
                         <NavigationLink path="home" label="Home"/>
                         <NavigationLink path="services" label="Our Services"/>
                         <NavigationLink path="calculator" label="Calculator"/>
+                        <NavigationLink path="openings" label="Careers"/>
                         <NavigationLink path="reviews" label="Reviews"/>
                         <NavigationLink path="articles" label="Our Blog"/>
                         <NavigationLink path="faqs" label="FAQ's"/>
@@ -99,7 +100,6 @@ const DesktopHeader = () => {
                                         textTransform: "capitalize",
                                         color: "colors.accent",
                                         cursor: "pointer",
-                                        fontFamily: "OgelicRegular"
                                     }}>
                                     +38 033-426 86 44
                                 </Button>
@@ -107,16 +107,18 @@ const DesktopHeader = () => {
                         </Stack>
                         <Link to="/contact" style={{textDecoration: "none"}}>
                             <Button
-                                variant="outlined"
+                                variant="contained"
+                                disableElevation={true}
                                 size="large"
+                                color="secondary"
                                 sx={{
                                     textTransform: "capitalize",
-                                    color: "colors.accent",
+                                    color: "white",
                                     borderRadius: 2,
                                     borderWidth: 2,
-                                    borderColor: "colors.accent",
-                                    borderStyle: "solid",
-                                    fontFamily: "OgelicRegular"
+                                    backgroundColor: "secondary.main",
+                                    fontWeight: 700,
+                                    fontFamily: "SatrevaNova"
                                 }}>
                                 Contact Us
                             </Button>

@@ -1,12 +1,12 @@
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
-import {selectArticles} from "../../redux/features/articles/articles-slice";
-import Article from "./article";
+import {selectOpenings} from "../../redux/features/openings/openings-slice";
+import Opening from "./opening";
 
-const BlogSection = () => {
+const OpeningSection = () => {
 
-    const {articles} = useSelector(selectArticles);
+    const {openings} = useSelector(selectOpenings);
 
     return (
         <Box sx={{width: "100%"}}>
@@ -16,12 +16,13 @@ const BlogSection = () => {
                         <Typography
                             variant="h4"
                             sx={{color: "text.primary", fontFamily: "SatrevaNova", fontWeight: 700}}>
-                            Our home cleaning {" "}
+                            Current{" "}
                             <Typography
                                 component="span"
                                 variant="h4" sx={{color: "secondary.main", fontFamily: "SatrevaNova", fontWeight: 700}}>
-                                blog
+                                job
                             </Typography>
+                            {" "}openings
                         </Typography>
                     </Box>
 
@@ -29,36 +30,34 @@ const BlogSection = () => {
                         <Grid container={true}>
                             <Grid item={true} xs={12} md={8}>
                                 <Typography variant="body1" sx={{color: "text.secondary"}}>
-                                    We research and find the best tools, equipments, chemicals and the proper ways to
-                                    clean an office, a house, furniture and many other. We don't forget to share our
-                                    findings with you through our blog.
+                                    Know your worth and find the job that qualify your lif.
                                 </Typography>
                             </Grid>
                         </Grid>
                     </Box>
 
                     <Box>
-                        <Grid container={true} spacing={2}>
-                            {articles?.map((article, index) => {
+                        <Stack spacing={2}>
+                            {openings.map((opening, index) => {
                                 return (
-                                    <Grid key={index} item={true} xs={12} md={6} lg={3}>
-                                        <Article article={article} />
-                                    </Grid>
+                                    <Box key={index}>
+                                        <Opening opening={opening}/>
+                                    </Box>
                                 )
                             })}
-                        </Grid>
+                        </Stack>
                     </Box>
 
                     <Box>
                         <Grid container={true} spacing={2} justifyContent="center">
                             <Grid item={true} xs={12} md={2}>
-                                <Link to="/articles" style={{textDecoration: "none", width: "100%", display: "block"}}>
+                                <Link to="#" style={{textDecoration: "none", width: "100%", display: "block"}}>
                                     <Button
                                         fullWidth={true}
                                         variant="outlined"
                                         size="large"
                                         sx={{
-                                            textTransform: "none",
+                                            textTransform: "capitalize",
                                             color: "colors.accent",
                                             borderRadius: 2,
                                             borderWidth: 2,
@@ -67,7 +66,7 @@ const BlogSection = () => {
                                             fontWeight: 700,
                                             fontFamily: "SatrevaNova"
                                         }}>
-                                        Go to the Blog
+                                        View Openings
                                     </Button>
                                 </Link>
                             </Grid>
@@ -79,4 +78,4 @@ const BlogSection = () => {
     )
 }
 
-export default BlogSection;
+export default OpeningSection;

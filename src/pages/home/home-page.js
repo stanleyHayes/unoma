@@ -10,6 +10,7 @@ import BlogSection from "../../components/shared/blog-section";
 import ReviewsSection from "../../components/shared/reviews-section";
 import {Element} from "react-scroll";
 import PortfolioSection from "../../components/shared/portfolio-section";
+import OpeningSection from "../../components/shared/opening-section";
 
 const HomePage = () => {
 
@@ -43,6 +44,12 @@ const HomePage = () => {
             <Element name="calculator">
                 <AnimatedSection>
                     <CalculatorSection/>
+                </AnimatedSection>
+            </Element>
+
+            <Element name="openings">
+                <AnimatedSection>
+                    <OpeningSection/>
                 </AnimatedSection>
             </Element>
 

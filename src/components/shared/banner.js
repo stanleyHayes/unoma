@@ -49,7 +49,7 @@ const Banner = () => {
                                     of
                                     cleanliness
                                 </Typography>
-                                <Grid container={true}>
+                                <Grid container={true} spacing={4}>
                                     <Grid item={true} xs={12} md={4}>
                                         <Link
                                             to="/contact"
@@ -62,10 +62,33 @@ const Banner = () => {
                                                     textTransform: "capitalize",
                                                     color: "white",
                                                     borderRadius: 2,
+                                                    fontWeight: 700,
                                                     backgroundColor: "secondary.main",
-                                                    fontFamily: "OgelicRegular"
+                                                    fontFamily: "SatrevaNova"
                                                 }}>
                                                 Contact Us
+                                            </Button>
+                                        </Link>
+                                    </Grid>
+                                    <Grid item={true} xs={12} md={4}>
+                                        <Link
+                                            to="#"
+                                            style={{textDecoration: "none", width: "100%", display: "block"}}>
+                                            <Button
+                                                fullWidth={true}
+                                                size="large"
+                                                disableElevation={true}
+                                                sx={{
+                                                    textTransform: "capitalize",
+                                                    color: "secondary.main",
+                                                    borderRadius: 2,
+                                                    fontWeight: 700,
+                                                    borderColor: "secondary.main",
+                                                    borderStyle: "solid",
+                                                    borderWidth: 2,
+                                                    fontFamily: "SatrevaNova"
+                                                }}>
+                                                Schedule Call
                                             </Button>
                                         </Link>
                                     </Grid>

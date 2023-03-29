@@ -122,7 +122,8 @@ const ChoicesSection = () => {
                                             borderWidth: 2,
                                             borderColor: "colors.accent",
                                             borderStyle: "solid",
-                                            fontFamily: "OgelicRegular"
+                                            fontWeight: 700,
+                                            fontFamily: "SatrevaNova"
                                         }}>
                                         Contact Us
                                     </Button>

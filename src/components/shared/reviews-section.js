@@ -98,7 +98,9 @@ const ReviewsSection = () => {
                                         borderRadius: 2,
                                         borderWidth: 2,
                                         borderColor: "colors.accent",
-                                        borderStyle: "solid"
+                                        borderStyle: "solid",
+                                        fontWeight: 700,
+                                        fontFamily: "SatrevaNova"
                                     }}>
                                     See More
                                 </Button>

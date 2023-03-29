@@ -14,7 +14,8 @@ const lightTheme = createTheme({
         background: {
             default: "#FFFFFF",
             paper: "#EDF4FF",
-            accent: "#FFF6E9"
+            accent: "#FFF6E9",
+            gray: "#f6f7f8"
         },
         text: {
             primary: "#0b1d3c",
@@ -55,7 +56,8 @@ const darkTheme = createTheme({
             default: "#1b1a1a",
             paper: "#252729",
             secondary: "#EDF4FF",
-            accent: "#FFF6E9"
+            accent: "#FFF6E9",
+            gray: "#525054"
         },
         text: {
             primary: "#fdfdfd",

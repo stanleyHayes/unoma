@@ -5,6 +5,7 @@ import articleReducer from "./../features/articles/articles-slice";
 import faqReducer from "./../features/faqs/faqs-slice";
 import reviewReducer from "./../features/reviews/reviews-slice";
 import projectReducer from "./../features/projects/projects-slice";
+import openingReducer from "./../features/openings/openings-slice";
 
 const store = configureStore({
     reducer: {
@@ -13,6 +14,7 @@ const store = configureStore({
         faqs: faqReducer,
         reviews: reviewReducer,
         projects: projectReducer,
+        openings: openingReducer,
     },
     devTools: true
 });
