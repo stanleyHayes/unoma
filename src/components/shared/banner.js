@@ -2,6 +2,7 @@ import {Box, Button, CardMedia, Container, Grid, Stack, Typography} from "@mui/m
 import {Link} from "react-router-dom";
 import {UNOMA_DATA} from "../../utils/data";
 import Carousel from "react-material-ui-carousel";
+import {Link as ScrollLink} from "react-scroll";
 
 const Banner = () => {
 
@@ -52,9 +53,7 @@ const Banner = () => {
                                 <Box>
                                     <Grid container={true} spacing={2}>
                                         <Grid item={true} xs={12} md={4}>
-                                            <Link
-                                                to="/contact"
-                                                style={{textDecoration: "none", width: "100%", display: "block"}}>
+                                            <ScrollLink to="contact" smooth={true} spy={true} offset={50} duration={500} delay={100}>
                                                 <Button
                                                     fullWidth={true}
                                                     size="large"
@@ -69,7 +68,7 @@ const Banner = () => {
                                                     }}>
                                                     Contact Us
                                                 </Button>
-                                            </Link>
+                                            </ScrollLink>
                                         </Grid>
                                         <Grid item={true} xs={12} md={4}>
                                             <Link
