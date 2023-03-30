@@ -7,10 +7,10 @@ import banner from "./../../assets/images/blog/pexels-nathan-cowley-713297.jpg";
 const ContactSection = () => {
     return (
         <Box sx={{width: "100%"}}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Box>
                     <Grid container={true} spacing={4} justifyContent="space-between">
-                        <Grid item={true} xs={12} md={8}>
+                        <Grid item={true} xs={12} md={6}>
                             <Box>
                                 <Stack direction="column" spacing={4}>
                                     <Box>
@@ -121,7 +121,7 @@ const ContactSection = () => {
                                 </Stack>
                             </Box>
                         </Grid>
-                        <Grid item={true} xs={12} md={4}>
+                        <Grid item={true} xs={12} md={6}>
                             <Box
                                 sx={{
                                     backgroundImage: `${banner}`,

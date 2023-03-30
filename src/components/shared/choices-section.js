@@ -6,7 +6,7 @@ import Choice from "./choice";
 const ChoicesSection = () => {
     return (
         <Box sx={{width: "100%"}}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Stack direction="column" spacing={4}>
                     <Box>
                         <Typography

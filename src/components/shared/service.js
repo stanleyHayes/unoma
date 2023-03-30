@@ -2,7 +2,7 @@ import {Box, Card, CardContent, Stack, Typography} from "@mui/material";
 
 const Service = ({icon, title, count, backgroundColor = "light.secondary"}) => {
     return (
-        <Card elevation={0} sx={{backgroundColor, borderRadius: 4}}>
+        <Card elevation={0} sx={{backgroundColor, borderRadius: 4, height: "100%"}}>
             <CardContent>
                 <Stack direction="column" spacing={4}>
                     <Box>

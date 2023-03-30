@@ -5,6 +5,7 @@ import {AnimatePresence, motion} from "framer-motion";
 import {CloseOutlined, DarkModeOutlined, LightModeOutlined, WifiCalling3Outlined} from "@mui/icons-material";
 import {selectUI, UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
 import {useDispatch, useSelector} from "react-redux";
+import {Link as ScrollLink} from "react-scroll";
 
 const DrawerContent = () => {
 
@@ -15,23 +16,13 @@ const DrawerContent = () => {
         <Box sx={{py: 4}}>
             <Stack
                 direction="column"
-                divider={<Divider sx={{my: 4}} variant="fullWidth" light={true}/>}>
+                divider={<Divider sx={{my: 2}} variant="fullWidth" light={true}/>}>
                 <Stack
                     sx={{px: 4}}
                     direction="row"
                     spacing={4}
                     alignItems="center"
                     justifyContent="space-between">
-                    <CloseOutlined
-                        onClick={() => dispatch(UI_ACTION_CREATORS.toggleDrawer(false))}
-                        sx={{
-                            color: "colors.accent",
-                            padding: 1,
-                            fontSize: 32,
-                            borderRadius: "25%",
-                            cursor: "pointer",
-                            backgroundColor: "icon.accentBackground"
-                        }}/>
 
                     <AnimatePresence initial={true} mode="sync">
                         {theme === "dark" && (
@@ -65,6 +56,16 @@ const DrawerContent = () => {
                             </Box>
                         )}
                     </AnimatePresence>
+                    <CloseOutlined
+                        onClick={() => dispatch(UI_ACTION_CREATORS.toggleDrawer(false))}
+                        sx={{
+                            color: "colors.accent",
+                            padding: 1,
+                            fontSize: 32,
+                            borderRadius: "25%",
+                            cursor: "pointer",
+                            backgroundColor: "icon.accentBackground"
+                        }}/>
                 </Stack>
 
                 <Box sx={{px: 4}}>
@@ -121,24 +122,24 @@ const DrawerContent = () => {
                                 </Button>
                             </MUILink>
                         </Stack>
-                        <Link to="/contact" style={{textDecoration: "none", width: "100%", display: "block"}}>
+                        <ScrollLink to="contact" smooth={true} spy={true} offset={50} duration={500} delay={100}>
                             <Button
-                                fullWidth={true}
-                                variant="outlined"
+                                variant="contained"
+                                disableElevation={true}
                                 size="large"
+                                color="secondary"
                                 sx={{
                                     textTransform: "capitalize",
-                                    color: "colors.accent",
+                                    color: "white",
                                     borderRadius: 2,
                                     borderWidth: 2,
-                                    borderColor: "colors.accent",
-                                    borderStyle: "solid",
+                                    backgroundColor: "secondary.main",
                                     fontWeight: 700,
                                     fontFamily: "SatrevaNova"
                                 }}>
                                 Contact Us
                             </Button>
-                        </Link>
+                        </ScrollLink>
                     </Stack>
                 </Box>
             </Stack>

@@ -38,5 +38,34 @@ const STAFF = [
         name: "Darlene Robertson",
         years_of_experience: 2
     }
-]
-export const UNOMA_DATA = {BANNER_SLIDER_IMAGES, STAFF};
+];
+const SERVICES = [
+    {
+        name: "General cleaning",
+        addition_services: [
+            "Washing inside the refrigerator",
+            "Washing inside the microwave",
+            "Washing inside the hood",
+            "Washing inside the oven"
+        ]
+    },
+    {
+        name: "Maintenance cleaning",
+        addition_services: [
+            "Washing inside the refrigerator",
+            "Washing inside the microwave",
+            "Washing inside the hood",
+            "Washing inside the oven"
+        ]
+    },
+    {
+        name: "Dry cleaning of furniture",
+        addition_services: [
+            "Washing inside the refrigerator",
+            "Washing inside the microwave",
+            "Washing inside the hood",
+            "Washing inside the oven"
+        ]
+    }
+];
+export const UNOMA_DATA = {BANNER_SLIDER_IMAGES, STAFF, SERVICES};

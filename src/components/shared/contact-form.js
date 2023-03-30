@@ -5,12 +5,13 @@ import {
     CardContent,
     FormControl,
     FormHelperText,
-    InputLabel,
     OutlinedInput,
-    Stack
+    Stack,
+    Typography
 } from "@mui/material";
 import {useFormik} from "formik";
 import * as yup from "yup";
+import {CallOutlined, CloseOutlined, CommentOutlined, MailOutlined, Person2Outlined} from "@mui/icons-material";
 
 const ContactForm = () => {
 
@@ -26,25 +27,35 @@ const ContactForm = () => {
 
     return (
         <Card
-            variant="outlined"
-            sx={{borderRadius: 2, backgroundColor: "background.default"}}
+            variant="elevation"
+            sx={{borderRadius: 8, backgroundColor: "background.paper"}}
             elevation={0}>
             <CardContent>
                 <form onSubmit={formik.handleSubmit}>
                     <Stack direction="column" spacing={2}>
+                        <Typography
+                            variant="h5"
+                            sx={{color: "text.primary", fontWeight: 700, mb: 3, fontFamily: "SatrevaNova"}}>
+                            Send us a{" "}
+                            <Typography
+                                component="span"
+                                variant="h5"
+                                sx={{color: "secondary.main", fontWeight: 700, mb: 3, fontFamily: "SatrevaNova"}}>
+                                message
+                            </Typography>
+                        </Typography>
                         <Box>
+                            <Typography variant="body2" sx={{color: "text.primary", fontWeight: 700, mb: 1}}>
+                                Your name
+                            </Typography>
                             <FormControl fullWidth={true} variant="outlined">
-                                <InputLabel>Name</InputLabel>
-
                                 <OutlinedInput
                                     value={formik.values.name}
                                     placeholder="Your Name"
                                     name="name"
                                     color="primary"
-                                    sx={{
-                                        backgroundColor: "background.gray",
-                                        borderRadius: 32
-                                    }}
+                                    sx={{borderRadius: 2}}
+                                    startAdornment={<Person2Outlined sx={{fontSize: 20, mr: 2}} color="secondary"/>}
                                     type="text"
                                     required={true}
                                     size="medium"
@@ -52,7 +63,6 @@ const ContactForm = () => {
                                     onChange={formik.handleChange}
                                     error={Boolean(formik.touched.name && formik.errors.name)}
                                     fullWidth={true}
-                                    label="Your name"
                                 />
                                 {formik.touched.name && formik.errors.name && (
                                     <FormHelperText>
@@ -63,16 +73,21 @@ const ContactForm = () => {
                         </Box>
 
                         <Box>
+                            <Typography variant="body2" sx={{color: "text.primary", fontWeight: 700, mb: 1}}>
+                                Email
+                            </Typography>
                             <FormControl fullWidth={true} variant="outlined">
-                                <InputLabel>Email</InputLabel>
                                 <OutlinedInput
                                     value={formik.values.email}
                                     placeholder="Your Email"
                                     name="email"
-                                    sx={{
-                                        backgroundColor: "background.gray",
-                                        borderRadius: 32
-                                    }}
+                                    sx={{borderRadius: 2}}
+                                    startAdornment={<MailOutlined sx={{fontSize: 20, mr: 2}} color="secondary"/>}
+                                    endAdornment={
+                                        Boolean(formik.touched.email && formik.errors.email) && (
+                                            <CloseOutlined color="error"/>
+                                        )
+                                    }
                                     type="email"
                                     required={true}
                                     size="medium"
@@ -81,7 +96,6 @@ const ContactForm = () => {
                                     error={Boolean(formik.touched.email && formik.errors.email)}
                                     helperText={formik.touched.name && formik.errors.email}
                                     fullWidth={true}
-                                    label="Your email"
                                 />
                                 {formik.touched.email && formik.errors.email && (
                                     <FormHelperText>
@@ -92,17 +106,17 @@ const ContactForm = () => {
                         </Box>
 
                         <Box>
+                            <Typography variant="body2" sx={{color: "text.primary", fontWeight: 700, mb: 1}}>
+                                Phone
+                            </Typography>
                             <FormControl fullWidth={true} variant="outlined">
-                                <InputLabel>Phone</InputLabel>
-
                                 <OutlinedInput
                                     value={formik.values.phone}
                                     placeholder="Your Phone"
                                     name="phone"
-                                    sx={{
-                                        backgroundColor: "background.gray",
-                                        borderRadius: 32
-                                    }}
+                                    sx={{borderRadius: 2}}
+                                    startAdornment={
+                                    <CallOutlined sx={{fontSize: 20, mr: 2}} color="secondary"/>}
                                     type="tel"
                                     required={true}
                                     size="medium"
@@ -111,7 +125,6 @@ const ContactForm = () => {
                                     error={Boolean(formik.touched.phone && formik.errors.phone)}
                                     helperText={formik.touched.phone && formik.errors.phone}
                                     fullWidth={true}
-                                    label="Your phone"
                                 />
                                 {formik.touched.phone && formik.errors.phone && (
                                     <FormHelperText>
@@ -122,16 +135,16 @@ const ContactForm = () => {
                         </Box>
 
                         <Box>
+                            <Typography variant="body2" sx={{color: "text.primary", fontWeight: 700, mb: 1}}>
+                                Message
+                            </Typography>
                             <FormControl fullWidth={true} variant="outlined">
-                                <InputLabel>Message</InputLabel>
                                 <OutlinedInput
                                     value={formik.values.message}
                                     placeholder="Your Message"
                                     name="message"
-                                    sx={{
-                                        backgroundColor: "background.gray",
-                                        borderRadius: 8
-                                    }}
+                                    sx={{borderRadius: 2}}
+                                    startAdornment={<CommentOutlined sx={{fontSize: 20, mr: 2, verticalAlign: "top"}} color="secondary"/>}
                                     type="text"
                                     required={true}
                                     size="medium"
@@ -140,9 +153,8 @@ const ContactForm = () => {
                                     error={Boolean(formik.touched.message && formik.errors.message)}
                                     helperText={formik.touched.message && formik.errors.message}
                                     fullWidth={true}
-                                    label="Your Message"
                                     multiline={true}
-                                    rows={4}
+                                    rows={2}
                                 />
                                 {formik.touched.message && formik.errors.message && (
                                     <FormHelperText>

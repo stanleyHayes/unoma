@@ -7,10 +7,10 @@ const Footer = () => {
     return (
         <Box sx={{backgroundColor: "colors.footer", pt: 4}}>
             <Box sx={{mb: 3}}>
-                <Container maxWidth="xl" sx={{display: {xs: "none", lg: "block"}}}>
+                <Container maxWidth="lg" sx={{display: {xs: "none", lg: "block"}}}>
                     <DesktopFooter/>
                 </Container>
-                <Container maxWidth="xl" sx={{display: {xs: "block", lg: "none"}}}>
+                <Container maxWidth="lg" sx={{display: {xs: "block", lg: "none"}}}>
                     <MobileFooter/>
                 </Container>
             </Box>

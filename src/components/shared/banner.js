@@ -7,9 +7,9 @@ const Banner = () => {
 
     return (
         <Box sx={{width: "100%", minHeight: "50vh", alignItems: "center", display: "flex"}}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Grid container={true} spacing={4} alignItems="center" justifyContent="space-between">
-                    <Grid item={true} xs={12} md={6} lg={5}>
+                    <Grid item={true} xs={12} md={6}>
                         <Box>
                             <Stack spacing={4}>
                                 <Typography variant="h2" sx={{color: "text.primary", fontWeight: 800}}>
@@ -98,7 +98,7 @@ const Banner = () => {
                             </Stack>
                         </Box>
                     </Grid>
-                    <Grid item={true} xs={12} md={6} lg={4}>
+                    <Grid item={true} xs={12} md={6}>
                         <Carousel
                             autoPlay={true}
                             stopAutoPlayOnHover={true}

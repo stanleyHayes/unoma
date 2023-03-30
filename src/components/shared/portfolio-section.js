@@ -10,7 +10,7 @@ const PortfolioSection = () => {
 
     return (
         <Box sx={{width: "100%"}}>
-            <Container maxWidth="xl">
+            <Container maxWidth="lg">
                 <Grid container={true} spacing={4}>
                     <Grid item={true} xs={12} md={4}>
                         <Box>
@@ -23,8 +23,15 @@ const PortfolioSection = () => {
                                         <Typography
                                             component="span"
                                             variant="h4"
+                                            sx={{color: "secondary.main", fontFamily: "RayleighGlamour", fontWeight: 700}}>
+                                            +500
+                                        </Typography>
+                                        {" "}
+                                        <Typography
+                                            component="span"
+                                            variant="h4"
                                             sx={{color: "secondary.main", fontFamily: "SatrevaNova", fontWeight: 700}}>
-                                            +500 orders
+                                            orders
                                         </Typography>
                                     </Typography>
                                 </Box>
@@ -32,7 +39,7 @@ const PortfolioSection = () => {
                                 <Box>
                                     <Grid container={true}>
                                         <Grid item={true} xs={12} md={8}>
-                                            <Typography variant="body1" sx={{color: "text.secondary"}}>
+                                            <Typography variant="body1" sx={{color: "rgba(255, 255, 255, 0.75)"}}>
                                                 We have a professional team. We constantly train our employees and
                                                 supervise
                                                 their work. We appreciate their decency, ability to work quickly and
@@ -62,11 +69,11 @@ const PortfolioSection = () => {
                                     justifyContent="center">
                                     <TrendingFlatOutlined
                                         sx={{
-                                            color: "icon.secondary",
+                                            color: "icon.accent",
                                             padding: 1,
                                             fontSize: 80,
                                             borderRadius: "100%",
-                                            backgroundColor: "icon.secondaryBackground"
+                                            backgroundColor: "icon.accentBackground"
                                         }}
                                     />
                                 </Stack>

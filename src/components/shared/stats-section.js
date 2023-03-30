@@ -4,8 +4,8 @@ import Stat from "./stat";
 const StatsSection = () => {
     return (
         <Box sx={{py: 4, backgroundColor: "secondary.main", width: "100%"}}>
-            <Container maxWidth="xl">
-                <Grid container={true} justifyContent="space-between" alignItems="center">
+            <Container maxWidth="lg">
+                <Grid spacing={4} container={true} justifyContent="space-between" alignItems="center">
                     <Grid item={true} xs={12} md={6} lg={3}>
                         <Stat title="Years in Business" value="15+" />
                     </Grid>

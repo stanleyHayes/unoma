@@ -34,8 +34,8 @@ const lightTheme = createTheme({
         icon: {
             accent: "#c89743",
             secondary: "#247FFB",
-            accentBackground: "rgba(200,151,67,0.2)",
-            secondaryBackground: "rgba(36,127,251,0.2)"
+            accentBackground: "rgba(200,151,67,0.05)",
+            secondaryBackground: "rgba(36,127,251,0.05)"
         },
         mode: "light",
     }
@@ -57,11 +57,11 @@ const darkTheme = createTheme({
             paper: "#252729",
             secondary: "#EDF4FF",
             accent: "#FFF6E9",
-            gray: "#525054"
+            gray: "#252729"
         },
         text: {
             primary: "#fdfdfd",
-            secondary: "rgba(241,241,248,0.3)",
+            secondary: "rgba(255,255,255,0.55)",
             title: "#3d7df6",
             accent: "#c89743"
         },
@@ -76,8 +76,8 @@ const darkTheme = createTheme({
         icon: {
             accent: "#c89743",
             secondary: "#247FFB",
-            accentBackground: "rgba(200,151,67,0.2)",
-            secondaryBackground: "rgba(36,127,251,0.2)"
+            accentBackground: "rgba(200,151,67,0.05)",
+            secondaryBackground: "rgba(36,127,251,0.05)"
         },
         mode: "dark",
     }

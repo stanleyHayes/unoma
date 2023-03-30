@@ -16,12 +16,12 @@ const Choice = ({icon, title, description}) => {
                     borderColor: "light.accent",
                     borderRadius: 4
                 }
-        }}>
+            }}>
             <CardContent>
                 <Box sx={{mb: 3}}>
                     {icon}
                 </Box>
-                <Typography variant="h6" sx={{color: "text.primary", fontWeight: 700}}>
+                <Typography variant="body1" sx={{color: "text.primary", fontWeight: 700, mb: 2, fontSize: 20}}>
                     {title}
                 </Typography>
                 <Typography variant="body2" sx={{color: "text.secondary"}}>

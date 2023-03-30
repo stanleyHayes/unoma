@@ -5,7 +5,7 @@ const Staff = ({staff}) => {
         <Card elevation={0} sx={{backgroundColor: "background.default"}}>
             <CardMedia
                 component="img"
-                sx={{borderRadius: 2, height: 300, objectFit: "cover", objectPosition: "top"}}
+                sx={{borderRadius: 2, height: {xs: 400, lg: 300}, objectFit: "cover", objectPosition: "top"}}
                 src={staff.image}
             />
             <CardContent>
