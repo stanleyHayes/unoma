@@ -12,12 +12,24 @@ const Splash = () => {
                             align="center"
                             sx={{
                                 textTransform: "uppercase",
-                                color: "text.primary",
+                                color: "secondary.main",
                                 fontWeight: 700,
                                 fontFamily: "SatrevaNova",
                                 letterSpacing: 1.4,
+                                mb: 3
                             }}>
                             Unona
+                        </Typography>
+
+                        <Typography
+                            variant="body1"
+                            align="center"
+                            sx={{
+                                color: "secondary.main",
+                                fontWeight: 600,
+                                fontFamily: "Urbanist"
+                            }}>
+                            Keeping the planet clean is essential, but keeping your house cleaner is necessary
                         </Typography>
                     </Box>
                     <Box>
@@ -44,9 +56,10 @@ const Splash = () => {
                             align="center"
                             sx={{
                                 textTransform: "none",
-                                color: "text.secondary",
+                                color: "colors.accent",
                                 fontFamily: "SatrevaNova",
                                 letterSpacing: 1.4,
+                                fontWeight: 700
                             }}>
                             Setting up. Please wait...
                         </Typography>

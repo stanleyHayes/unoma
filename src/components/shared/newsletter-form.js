@@ -14,9 +14,6 @@ import * as yup from "yup";
 import {MailOutlined, Person2Outlined, SendOutlined} from "@mui/icons-material";
 import {motion} from "framer-motion";
 
-const container = {};
-const item = {};
-
 const NewsletterForm = () => {
 
     const formik = useFormik({
@@ -29,7 +26,12 @@ const NewsletterForm = () => {
 
     return (
         <Box>
-            <Grid component={motion.div} container={true} spacing={4} alignItems="center">
+            <Grid
+                component={motion.div}
+                container={true}
+                spacing={4}
+                alignItems="center"
+                justifyContent="space-between">
                 <Grid
                     whileInView={{
                         x: 0,
@@ -61,7 +63,7 @@ const NewsletterForm = () => {
                         <Typography
                             component="span"
                             variant="h4"
-                            sx={{color: "text.primary", fontWeight: 700, mb: 3, fontFamily: "SatrevaNova"}}>
+                            sx={{color: "white", fontWeight: 700, mb: 3, fontFamily: "SatrevaNova"}}>
                             for{" "}
                         </Typography>
                         <Typography
@@ -73,7 +75,7 @@ const NewsletterForm = () => {
                         <Typography
                             component="span"
                             variant="h4"
-                            sx={{color: "text.primary", fontWeight: 700, mb: 3, fontFamily: "SatrevaNova"}}>
+                            sx={{color: "white", fontWeight: 700, mb: 3, fontFamily: "SatrevaNova"}}>
                             and{" "}
                         </Typography>
                         <Typography
@@ -106,8 +108,8 @@ const NewsletterForm = () => {
                     <Card
                         elevation={0}
                         sx={{
-                            backgroundColor: "rgba(255, 255, 255, 0.05)",
-                            backdropFilter: "blur(35px)",
+                            backgroundColor: "rgba(255, 255, 255, 0.1)",
+                            backdropFilter: "blur(5px)",
                             borderRadius: 4
                         }}>
                         <CardContent>
@@ -119,8 +121,13 @@ const NewsletterForm = () => {
                                                 value={formik.values.name}
                                                 placeholder="Your Name"
                                                 name="name"
-                                                color="primary"
-                                                sx={{borderRadius: 2}}
+                                                sx={{
+                                                    borderRadius: 3,
+                                                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                                                }}
+                                                inputProps={{
+                                                    style: {color: "white"}
+                                                }}
                                                 startAdornment={
                                                     <Person2Outlined
                                                         sx={{fontSize: 20, mr: 2, color: "white"}}
@@ -150,9 +157,13 @@ const NewsletterForm = () => {
                                                     name="name"
                                                     color="primary"
                                                     sx={{
-                                                        borderRadius: 2,
+                                                        borderRadius: 3,
                                                         borderTopRightRadius: 0,
-                                                        borderBottomRightRadius: 0
+                                                        borderBottomRightRadius: 0,
+                                                        backgroundColor: "rgba(255, 255, 255, 0.05)",
+                                                    }}
+                                                    inputProps={{
+                                                        style: {color: "white"}
                                                     }}
                                                     startAdornment={
                                                         <MailOutlined

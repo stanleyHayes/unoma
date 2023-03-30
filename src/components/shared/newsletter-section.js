@@ -1,5 +1,5 @@
 import {Box, Container} from "@mui/material";
-import banner from "./../../assets/images/banner/nasa-2W-QWAC0mzI-unsplash.jpg";
+import banner from "./../../assets/images/banner/banner.jpg";
 import NewsletterForm from "./newsletter-form";
 
 const NewsletterSection = () => {
@@ -8,7 +8,7 @@ const NewsletterSection = () => {
             sx={{
                 width: "100%",
                 backgroundImage: `url(${banner})`,
-                minHeight: "30vh",
+                minHeight: "50vh",
                 display: "flex",
                 alignItems: "center",
                 backgroundColor: "rgba(0, 0, 0, 0.33)",
@@ -19,7 +19,7 @@ const NewsletterSection = () => {
                 height: "100%",
                 paddingY: 8
             }}>
-            <Container>
+            <Container maxWidth="xl">
                 <NewsletterForm/>
             </Container>
         </Box>
