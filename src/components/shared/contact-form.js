@@ -94,7 +94,6 @@ const ContactForm = () => {
                                     onBlur={formik.handleBlur}
                                     onChange={formik.handleChange}
                                     error={Boolean(formik.touched.email && formik.errors.email)}
-                                    helperText={formik.touched.name && formik.errors.email}
                                     fullWidth={true}
                                 />
                                 {formik.touched.email && formik.errors.email && (
@@ -123,7 +122,6 @@ const ContactForm = () => {
                                     onBlur={formik.handleBlur}
                                     onChange={formik.handleChange}
                                     error={Boolean(formik.touched.phone && formik.errors.phone)}
-                                    helperText={formik.touched.phone && formik.errors.phone}
                                     fullWidth={true}
                                 />
                                 {formik.touched.phone && formik.errors.phone && (
@@ -151,7 +149,6 @@ const ContactForm = () => {
                                     onBlur={formik.handleBlur}
                                     onChange={formik.handleChange}
                                     error={Boolean(formik.touched.message && formik.errors.message)}
-                                    helperText={formik.touched.message && formik.errors.message}
                                     fullWidth={true}
                                     multiline={true}
                                     rows={2}
