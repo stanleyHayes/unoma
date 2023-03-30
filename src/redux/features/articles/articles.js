@@ -6,22 +6,22 @@ import blog4 from "./../../../assets/images/blog/pexels-karolina-grabowska-42390
 export const articles = [
     {
         image: blog1,
-        created_at: "08-09-2020",
+        created_at: new Date(2021, 11, 23, 6, 8, 20, 600).getTime(),
         title: "Types of Carpets and Common Methods of Cleaning Them"
     },
     {
         image: blog2,
-        created_at: new Date(2021, 11, 23, 6, 8, 20, 600).toString(),
+        created_at: new Date(2021, 11, 23, 6, 8, 20, 600).getTime(),
         title: "Top 8 Benefits of Clean Master Services"
     },
     {
         image: blog3,
-        created_at: new Date(2022, 11, 22, 6, 8, 20, 600).toString(),
+        created_at: new Date(2022, 11, 22, 6, 8, 20, 600).getTime(),
         title: "A Few Facts About Mold and DIY  Mold Removal Myths"
     },
     {
         image: blog4,
-        created_at: new Date(2022, 11, 22, 6, 8, 20, 600).toString(),
+        created_at: new Date(2022, 11, 22, 6, 8, 20, 600).getTime(),
         title: "Process of Professionals Water Damage Restoration"
     }
 ]

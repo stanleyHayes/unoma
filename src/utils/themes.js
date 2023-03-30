@@ -25,7 +25,7 @@ const lightTheme = createTheme({
         },
         light: {
             secondary: "#EDF4FF",
-            accent: "#FFF6E9",
+            accent: "rgba(251,160,36,0.3)",
         },
         colors: {
             accent: "#FBA024",

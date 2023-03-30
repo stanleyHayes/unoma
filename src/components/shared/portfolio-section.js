@@ -1,4 +1,4 @@
-import {Box, Grid, Stack, Typography, Container} from "@mui/material";
+import {Box, Grid, Stack, Typography, Container, useTheme} from "@mui/material";
 import {TrendingFlatOutlined} from "@mui/icons-material";
 import {useSelector} from "react-redux";
 import {selectProjects} from "../../redux/features/projects/projects-slice";
@@ -7,6 +7,7 @@ import Project from "./project";
 const PortfolioSection = () => {
 
     const {projects} = useSelector(selectProjects);
+    const theme = useTheme();
 
     return (
         <Box sx={{width: "100%"}}>
@@ -23,7 +24,11 @@ const PortfolioSection = () => {
                                         <Typography
                                             component="span"
                                             variant="h4"
-                                            sx={{color: "secondary.main", fontFamily: "RayleighGlamour", fontWeight: 700}}>
+                                            sx={{
+                                                color: "secondary.main",
+                                                fontFamily: "RayleighGlamour",
+                                                fontWeight: 700
+                                            }}>
                                             +500
                                         </Typography>
                                         {" "}
@@ -39,7 +44,14 @@ const PortfolioSection = () => {
                                 <Box>
                                     <Grid container={true}>
                                         <Grid item={true} xs={12} md={8}>
-                                            <Typography variant="body1" sx={{color: "rgba(255, 255, 255, 0.75)"}}>
+                                            <Typography
+                                                variant="body1"
+                                                sx={{
+                                                    color:
+                                                        theme.palette.mode === "dark" ?
+                                                            "rgba(255, 255, 255, 0.75)" :
+                                                            "rgba(0, 0, 0, 0.75)"
+                                                }}>
                                                 We have a professional team. We constantly train our employees and
                                                 supervise
                                                 their work. We appreciate their decency, ability to work quickly and
