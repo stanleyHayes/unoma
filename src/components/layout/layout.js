@@ -36,7 +36,8 @@ const Layout = ({children}) => {
                     minHeight: "100vh",
                     maxWidth: "100vw",
                     display: "flex",
-                    flexDirection: "column"
+                    flexDirection: "column",
+                    overflowX: "hidden"
                 }}>
                     <Box>
                         <Header/>
