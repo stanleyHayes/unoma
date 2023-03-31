@@ -16,7 +16,7 @@ const MobileFooter = () => {
     return (
         <Box>
             <Stack spacing={1}>
-                <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
+                <Accordion square={true} elevation={0} sx={{backgroundColor: "colors.footer"}}>
                     <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
@@ -49,7 +49,7 @@ const MobileFooter = () => {
                     </AccordionDetails>
                 </Accordion>
 
-                <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
+                <Accordion square={true} elevation={0} sx={{backgroundColor: "colors.footer"}}>
                     <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
@@ -91,7 +91,7 @@ const MobileFooter = () => {
                         </Stack>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
+                <Accordion square={true} elevation={0} sx={{backgroundColor: "colors.footer"}}>
                     <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
@@ -134,7 +134,7 @@ const MobileFooter = () => {
                         </Stack>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion square={true} sx={{backgroundColor: "colors.footer"}}>
+                <Accordion square={true} elevation={0} sx={{backgroundColor: "colors.footer"}}>
                     <AccordionSummary sx={{backgroundColor: "colors.footer"}} expandIcon={<South
                         sx={{
                             color: "icon.secondary",
